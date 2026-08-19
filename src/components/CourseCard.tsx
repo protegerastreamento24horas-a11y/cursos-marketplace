@@ -95,16 +95,29 @@ export default function CourseCard({ course }: { course: Course }) {
               </span>
             )}
           </div>
+        </div>
 
+        <div className="flex flex-col gap-2 mt-4">
+          <a
+            href={course.checkoutLink || course.affiliateLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-[#FFC107] to-[#FF7A00] px-5 py-2.5 text-sm font-semibold text-[#0D0D0D] shadow-md hover:from-[#FFE600] hover:to-[#FFC107] transition-all duration-200 hover:shadow-[0_0_20px_rgba(255,193,7,0.4)]"
+          >
+            Comprar Agora
+            <svg className="ml-1.5 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </a>
           <a
             href={course.affiliateLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center rounded-xl bg-gradient-to-r from-[#FFC107] to-[#FF7A00] px-5 py-2.5 text-sm font-semibold text-[#0D0D0D] shadow-md hover:from-[#FFE600] hover:to-[#FFC107] transition-all duration-200 hover:shadow-[0_0_20px_rgba(255,193,7,0.4)]"
+            className="inline-flex items-center justify-center rounded-xl border border-[#3a3f4e] bg-[#1B1F2A] px-5 py-2.5 text-sm font-medium text-[#D0D5E6] hover:border-[#FFC107] hover:text-[#FFC107] transition-all duration-200"
           >
-            Ver Curso
+            Ver Página do Curso
             <svg className="ml-1.5 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
           </a>
         </div>
