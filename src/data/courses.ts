@@ -152,4 +152,16 @@ export const courses: Course[] = [
     rating: 4.9,
     students: 15000,
   },
+  {
+    id: "10",
+    title: "Lumi - Ofertas com Inteligência",
+    description: "Transforme grupos em máquinas de vendas com automação inteligente de ofertas. A LUMI encontra, cria e divulga ofertas automaticamente para você.",
+    image: "https://lumiofertasinteligentes.com.br/wp-content/uploads/2026/01/lumi-ofertas-com-inteligencia.jpg",
+    category: "Marketing Digital",
+    price: "Consulte",
+    affiliateLink: "https://kiwify.app/7Vi0zQY?afid=1cu0Cm9E",
+    platform: "kiwify",
+    rating: 4.7,
+    students: 5000,
+  },
 ];
