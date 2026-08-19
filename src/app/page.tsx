@@ -71,7 +71,7 @@ export default function HomePage() {
             <span className="text-[#FFC107]">Destaques</span>
           </h2>
           <p className="text-[#D0D5E6] mb-8">Os cursos mais populares da nossa plataforma</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {featuredCourses.map((course) => (
               <CourseCard key={course.id} course={course} />
             ))}
@@ -104,7 +104,7 @@ export default function HomePage() {
             <p className="mt-4 text-[#D0D5E6]">Nenhum curso encontrado com esses filtros.</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredCourses.map((course) => (
               <CourseCard key={course.id} course={course} />
             ))}
