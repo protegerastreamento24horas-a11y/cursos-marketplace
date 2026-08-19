@@ -55,3 +55,11 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #FF7A00;
 }
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

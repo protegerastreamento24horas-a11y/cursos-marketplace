@@ -56,7 +56,7 @@ export default function CursosPage() {
             <p className="mt-4 text-[#D0D5E6]">Nenhum curso encontrado.</p>
           </div>
         ) : (
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
             {filteredCourses.map((course) => (
               <CourseCard key={course.id} course={course} />
             ))}
