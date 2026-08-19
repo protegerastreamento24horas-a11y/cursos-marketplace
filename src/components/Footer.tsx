@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="bg-[#1B1F2A] text-[#D0D5E6] mt-auto border-t border-[#2a2f3e]">
@@ -6,15 +8,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-5">
-              <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-[#FFC107] via-[#FFD633] to-[#FF7A00] flex items-center justify-center shadow-[0_0_15px_rgba(255,193,7,0.3)]">
-                <span className="text-[#0D0D0D] font-black text-xl">C</span>
-              </div>
-              <div>
-                <span className="text-xl font-black text-white">
-                  Cursos<span className="text-[#FFC107]">Pro</span>
-                </span>
-                <p className="text-[11px] text-[#D0D5E6]/50 uppercase tracking-widest">Marketplace de Cursos</p>
-              </div>
+              <Image
+                src="/logo.png"
+                alt="CursosPro Logo"
+                width={140}
+                height={45}
+                className="h-11 w-auto object-contain"
+              />
             </div>
             <p className="text-sm leading-relaxed text-[#D0D5E6]/80 max-w-sm">
               Encontre os melhores cursos online com desconto. Parceiros das principais plataformas de ensino do Brasil. Aprenda novas habilidades e transforme sua carreira.

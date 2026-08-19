@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const navLinks = [
@@ -23,14 +24,15 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-[#FFC107] via-[#FFD633] to-[#FF7A00] flex items-center justify-center shadow-[0_0_20px_rgba(255,193,7,0.3)] group-hover:shadow-[0_0_30px_rgba(255,193,7,0.5)] transition-shadow">
-              <span className="text-[#0D0D0D] font-black text-lg">C</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-black text-white leading-tight tracking-tight">
-                Cursos<span className="text-[#FFC107]">Pro</span>
-              </span>
-              <span className="text-[10px] text-[#D0D5E6]/60 uppercase tracking-widest hidden sm:block">Marketplace de Cursos</span>
+            <div className="h-10 w-auto relative">
+              <Image
+                src="/logo.png"
+                alt="CursosPro Logo"
+                width={120}
+                height={40}
+                className="h-10 w-auto object-contain"
+                priority
+              />
             </div>
           </Link>
 
