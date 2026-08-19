@@ -26,6 +26,7 @@ export const categories = [
   "Música",
   "Idiomas",
   "Desenvolvimento Pessoal",
+  "Artesanato",
 ] as const;
 
 export type Category = (typeof categories)[number];
@@ -111,5 +112,19 @@ export const courses: Course[] = [
     platform: "kiwify",
     rating: 4.5,
     students: 7400,
+  },
+  {
+    id: "7",
+    title: "Aprenda Crochê - Do Básico ao Avançado",
+    description: "Aprenda criar lindas peças de crochê mesmo que você nunca tenha pego em uma agulha na vida! +120 aulas em vídeo, bônus exclusivos e certificado.",
+    image: "https://aprendacroche.art.br/wp-content/uploads/2024/06/logoac.webp",
+    category: "Artesanato",
+    price: "R$ 197,00",
+    originalPrice: "R$ 497,00",
+    affiliateLink: "https://kiwify.app/TBu54LC?afid=YnZOMa3h",
+    platform: "kiwify",
+    rating: 4.9,
+    students: 600,
+    featured: true,
   },
 ];
