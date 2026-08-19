@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Image from "next/image";
 import { courses } from "@/data/courses";
 import CourseCard from "@/components/CourseCard";
 import CategoryFilter from "@/components/CategoryFilter";
@@ -27,34 +28,16 @@ export default function HomePage() {
 
   return (
     <div className="bg-[#0D0D0D] min-h-screen">
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#0D0D0D] via-[#1B1F2A] to-[#0D0D0D]">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,193,7,0.1)_0%,_transparent_70%)]" />
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
-          <div className="text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
-              Os{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFC107] to-[#FF7A00]">
-                Melhores
-              </span>{" "}
-              Cursos Online
-            </h1>
-            <p className="mt-6 text-lg sm:text-xl text-[#D0D5E6] max-w-2xl mx-auto">
-              Encontre cursos com desconto das principais plataformas. Hotmart, KiwiFy, Eduzz e muito mais.
-            </p>
-            <div className="mt-10 flex justify-center">
-              <a
-                href="#cursos"
-                className="inline-flex items-center rounded-xl bg-gradient-to-r from-[#FFC107] to-[#FF7A00] px-8 py-4 text-base font-semibold text-[#0D0D0D] shadow-[0_0_30px_rgba(255,193,7,0.3)] hover:shadow-[0_0_40px_rgba(255,193,7,0.5)] transition-all duration-300"
-              >
-                Ver Cursos
-                <svg className="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
+      {/* Banner */}
+      <section className="relative w-full">
+        <Image
+          src="/banner.png"
+          alt="Banner CursosPro"
+          width={1920}
+          height={600}
+          className="w-full h-auto object-cover"
+          priority
+        />
       </section>
 
       {/* Stats */}
