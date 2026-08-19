@@ -28,7 +28,7 @@ export default function HomePage() {
 
   return (
     <div className="bg-[#0D0D0D] min-h-screen">
-      {/* Banner */}
+      {/* Banner + Busca + Categorias */}
       <section className="relative w-full">
         <Image
           src="/banner.png"
@@ -38,6 +38,14 @@ export default function HomePage() {
           className="w-full h-auto object-cover"
           priority
         />
+        <div className="bg-[#1B1F2A] border-b border-[#2a2f3e]">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
+            <div className="flex flex-col gap-3">
+              <SearchBar value={search} onChange={setSearch} />
+              <CategoryFilter selected={category} onSelect={setCategory} />
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Stats */}
@@ -84,17 +92,9 @@ export default function HomePage() {
         <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
           {category === "Todos" ? "Todos os Cursos" : category}
         </h2>
-        <p className="text-[#D0D5E6] mb-6">
+        <p className="text-[#D0D5E6] mb-8">
           {filteredCourses.length} curso{filteredCourses.length !== 1 ? "s" : ""} encontrado{filteredCourses.length !== 1 ? "s" : ""}
         </p>
-
-        <div className="flex flex-col sm:flex-row gap-4 mb-8">
-          <SearchBar value={search} onChange={setSearch} />
-        </div>
-
-        <div className="mb-8">
-          <CategoryFilter selected={category} onSelect={setCategory} />
-        </div>
 
         {filteredCourses.length === 0 ? (
           <div className="text-center py-16">
