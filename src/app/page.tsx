@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback } from "react";
 import Image from "next/image";
 import { courses } from "@/data/courses";
 import CourseCard from "@/components/CourseCard";
@@ -25,6 +25,13 @@ export default function HomePage() {
       return matchesSearch && matchesCategory;
     });
   }, [search, category]);
+
+  const scrollCarousel = useCallback((id: string, direction: "left" | "right") => {
+    const el = document.getElementById(`${id}-carousel`);
+    if (!el) return;
+    const scrollAmount = el.offsetWidth * 0.7;
+    el.scrollBy({ left: direction === "left" ? -scrollAmount : scrollAmount, behavior: "smooth" });
+  }, []);
 
   return (
     <div className="bg-[#0D0D0D] min-h-screen">
@@ -92,16 +99,41 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Courses */}
+      {/* Featured Courses - Carousel */}
       {category === "Todos" && search === "" && featuredCourses.length > 0 && (
-        <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
-            <span className="text-[#FFC107]">Destaques</span>
-          </h2>
-          <p className="text-[#D0D5E6] mb-8">Os cursos mais populares da nossa plataforma</p>
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
+        <section className="py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-8">
+            <div className="flex items-end justify-between">
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
+                  <span className="text-[#FFC107]">Destaques</span>
+                </h2>
+                <p className="text-[#D0D5E6]">Deslize para ver as ofertas</p>
+              </div>
+              <div className="hidden sm:flex gap-2">
+                <button
+                  onClick={() => scrollCarousel("featured", "left")}
+                  className="h-10 w-10 rounded-full border border-[#2a2f3e] bg-[#1B1F2A] flex items-center justify-center text-[#D0D5E6] hover:border-[#FFC107] hover:text-[#FFC107] transition-all"
+                >
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+                </button>
+                <button
+                  onClick={() => scrollCarousel("featured", "right")}
+                  className="h-10 w-10 rounded-full border border-[#2a2f3e] bg-[#1B1F2A] flex items-center justify-center text-[#D0D5E6] hover:border-[#FFC107] hover:text-[#FFC107] transition-all"
+                >
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            id="featured-carousel"
+            className="flex gap-4 overflow-x-auto pb-4 px-4 sm:px-[max(1rem,calc((100%-80rem)/2+1rem))] scrollbar-hide snap-x snap-mandatory"
+          >
             {featuredCourses.map((course) => (
-              <CourseCard key={course.id} course={course} />
+              <div key={course.id} className="flex-shrink-0 w-[280px] sm:w-[320px] snap-start">
+                <CourseCard course={course} />
+              </div>
             ))}
           </div>
         </section>
