@@ -16,8 +16,8 @@ export default function CategoryFilter({ selected, onSelect }: CategoryFilterPro
           onClick={() => onSelect(category)}
           className={`rounded-full px-4 py-2 text-sm font-medium transition-all duration-200 ${
             selected === category
-              ? "bg-blue-600 text-white shadow-md"
-              : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+              ? "bg-gradient-to-r from-[#FFC107] to-[#FF7A00] text-[#0D0D0D] shadow-[0_0_15px_rgba(255,193,7,0.3)]"
+              : "bg-[#1B1F2A] text-[#D0D5E6] border border-[#2a2f3e] hover:border-[#FFC107] hover:text-[#FFC107]"
           }`}
         >
           {category}
