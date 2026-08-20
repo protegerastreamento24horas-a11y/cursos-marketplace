@@ -4,7 +4,7 @@ export default function Testimonials() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
           <h2 className="text-2xl sm:text-3xl font-bold text-white">
-            ⭐ <span className="text-gradient-gold">Quem Ja Conhece o CursosPro</span>
+            <span className="text-gradient-gold">Quem Ja Conhece o CursosPro</span>
           </h2>
           <p className="text-sm text-[#D0D5E6]/50 mt-1">Depoimentos reais de quem ja encontrou cursos por aqui</p>
         </div>

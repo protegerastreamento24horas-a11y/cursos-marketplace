@@ -16,7 +16,7 @@ export default function TopSellingSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-4">
           <h2 className="text-xl sm:text-2xl font-bold text-white">
-            🏆 <span className="text-gradient-gold">Mais Vendidos</span>
+            <span className="text-gradient-gold">Mais Vendidos</span>
           </h2>
           <p className="text-xs text-[#D0D5E6]/40 mt-1">Os cursos que mais chamam atencao</p>
         </div>
@@ -25,8 +25,8 @@ export default function TopSellingSection() {
             <CarouselItem key={course.id}>
               <div className="relative">
                 {i < 3 && (
-                  <div className="absolute -top-2 -left-1 z-10 text-lg">
-                    {i === 0 ? "🥇" : i === 1 ? "🥈" : "🥉"}
+                  <div className="absolute -top-2 -left-1 z-10 text-xs font-bold bg-gradient-to-r from-[#FFC107] to-[#FF7A00] text-[#0D0D0D] h-6 w-6 rounded-full flex items-center justify-center shadow-lg">
+                    {i + 1}
                   </div>
                 )}
                 <CourseCard course={course} compact />

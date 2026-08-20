@@ -18,28 +18,28 @@ export interface Course {
 }
 
 export const categories = [
-  { id: "Todos", label: "Todos", icon: "📚" },
-  { id: "Marketing Digital", label: "Marketing Digital", icon: "📈" },
-  { id: "Trafego Pago", label: "Trafego Pago", icon: "🎯" },
-  { id: "Inteligencia Artificial", label: "Inteligencia Artificial", icon: "🤖" },
-  { id: "Empreendedorismo", label: "Empreendedorismo", icon: "💡" },
-  { id: "Financas", label: "Financas", icon: "💰" },
-  { id: "Design", label: "Design", icon: "🎨" },
-  { id: "Tecnico", label: "Tecnico", icon: "🔧" },
-  { id: "Saude", label: "Saude", icon: "🏥" },
-  { id: "Desenvolvimento Pessoal", label: "Desenvolvimento Pessoal", icon: "🧠" },
-  { id: "Artesanato", label: "Artesanato", icon: "✂️" },
+  { id: "Todos", label: "Todos", icon: "ALL" },
+  { id: "Marketing Digital", label: "Marketing Digital", icon: "MD" },
+  { id: "Trafego Pago", label: "Trafego Pago", icon: "TP" },
+  { id: "Inteligencia Artificial", label: "Inteligencia Artificial", icon: "IA" },
+  { id: "Empreendedorismo", label: "Empreendedorismo", icon: "EMP" },
+  { id: "Financas", label: "Financas", icon: "FIN" },
+  { id: "Design", label: "Design", icon: "DES" },
+  { id: "Tecnico", label: "Tecnico", icon: "TEC" },
+  { id: "Saude", label: "Saude", icon: "SAU" },
+  { id: "Desenvolvimento Pessoal", label: "Desenvolvimento Pessoal", icon: "DP" },
+  { id: "Artesanato", label: "Artesanato", icon: "ART" },
 ] as const;
 
 export type CategoryId = (typeof categories)[number]["id"];
 
 export const categoryGoals = [
-  { id: "ganhar-dinheiro", label: "Ganhar Dinheiro Online", icon: "💰", categories: ["Empreendedorismo", "Marketing Digital", "Financas"] },
-  { id: "dominar-ia", label: "Dominar Inteligencia Artificial", icon: "🤖", categories: ["Inteligencia Artificial"] },
-  { id: "marketing-digital", label: "Aprender Marketing Digital", icon: "📱", categories: ["Marketing Digital", "Trafego Pago"] },
-  { id: "aprender-design", label: "Aprender Design", icon: "🎨", categories: ["Design", "Artesanato"] },
-  { id: "entrar-tecnologia", label: "Entrar na Tecnologia", icon: "💻", categories: ["Tecnico", "Inteligencia Artificial"] },
-  { id: "melhorar-carreira", label: "Melhorar Sua Carreira", icon: "📈", categories: ["Desenvolvimento Pessoal", "Saude"] },
+  { id: "ganhar-dinheiro", label: "Ganhar Dinheiro Online", icon: "R$", categories: ["Empreendedorismo", "Marketing Digital", "Financas"] },
+  { id: "dominar-ia", label: "Dominar Inteligencia Artificial", icon: "AI", categories: ["Inteligencia Artificial"] },
+  { id: "marketing-digital", label: "Aprender Marketing Digital", icon: "MKT", categories: ["Marketing Digital", "Trafego Pago"] },
+  { id: "aprender-design", label: "Aprender Design", icon: "DES", categories: ["Design", "Artesanato"] },
+  { id: "entrar-tecnologia", label: "Entrar na Tecnologia", icon: "TEC", categories: ["Tecnico", "Inteligencia Artificial"] },
+  { id: "melhorar-carreira", label: "Melhorar Sua Carreira", icon: "CAR", categories: ["Desenvolvimento Pessoal", "Saude"] },
 ] as const;
 
 export const parsePrice = (price: string): number => {

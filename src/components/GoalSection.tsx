@@ -10,7 +10,7 @@ export default function GoalSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-4">
           <h2 className="text-xl sm:text-2xl font-bold text-white">
-            🎯 <span className="text-gradient-gold">O Que Voce Quer Aprender?</span>
+            <span className="text-gradient-gold">O Que Voce Quer Aprender?</span>
           </h2>
           <p className="text-xs text-[#D0D5E6]/40 mt-1">Escolha por objetivo</p>
         </div>
@@ -26,8 +26,8 @@ export default function GoalSection() {
                   href={`/cursos?cat=${encodeURIComponent(goal.categories[0])}`}
                   className="group flex items-center gap-3 bg-[#1B1F2A]/60 rounded-2xl border border-[#2a2f3e]/40 p-4 hover:border-[#FFC107]/20 hover:bg-[#1B1F2A] transition-all h-full"
                 >
-                  <div className="h-10 w-10 rounded-xl bg-[#FFC107]/10 flex items-center justify-center text-xl shrink-0 group-hover:bg-[#FFC107]/15 transition-colors">
-                    {goal.icon}
+                  <div className="h-10 w-10 rounded-xl bg-[#FFC107]/10 flex items-center justify-center shrink-0 group-hover:bg-[#FFC107]/15 transition-colors">
+                    <span className="text-xs font-bold text-[#FFC107]">{goal.icon}</span>
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="text-xs font-bold text-white group-hover:text-[#FFC107] transition-colors leading-tight">

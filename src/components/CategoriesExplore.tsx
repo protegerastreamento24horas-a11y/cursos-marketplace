@@ -12,7 +12,7 @@ export default function CategoriesExplore() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-4">
           <h2 className="text-xl sm:text-2xl font-bold text-white">
-            📚 <span className="text-gradient-gold">Explore por Categoria</span>
+            <span className="text-gradient-gold">Explore por Categoria</span>
           </h2>
           <p className="text-xs text-[#D0D5E6]/40 mt-1">Encontre o curso ideal para voce</p>
         </div>
@@ -25,7 +25,7 @@ export default function CategoriesExplore() {
                   href={`/cursos?cat=${encodeURIComponent(cat.id)}`}
                   className="group flex flex-col items-center gap-2 bg-[#1B1F2A]/60 rounded-2xl border border-[#2a2f3e]/40 p-5 hover:border-[#FFC107]/20 hover:bg-[#1B1F2A] transition-all h-full"
                 >
-                  <span className="text-2xl sm:text-3xl">{cat.icon}</span>
+                  <span className="text-xs font-bold text-[#FFC107] bg-[#FFC107]/10 h-10 w-10 rounded-xl flex items-center justify-center">{cat.icon}</span>
                   <h3 className="text-xs font-bold text-white group-hover:text-[#FFC107] transition-colors text-center">
                     {cat.label}
                   </h3>

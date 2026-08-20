@@ -19,7 +19,7 @@ export default function UnderPriceSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-4">
           <h2 className="text-xl sm:text-2xl font-bold text-white">
-            💰 <span className="text-gradient-gold">Cursos Ate R$50</span>
+            <span className="text-gradient-gold">Cursos Ate R$50</span>
           </h2>
           <p className="text-xs text-[#D0D5E6]/40 mt-1">Conhecimento que cabe no bolso</p>
         </div>

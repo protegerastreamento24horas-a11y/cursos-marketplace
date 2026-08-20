@@ -37,7 +37,7 @@ export default function FAQ() {
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
           <h2 className="text-2xl sm:text-3xl font-bold text-white">
-            ❓ <span className="text-gradient-gold">Perguntas Frequentes</span>
+            <span className="text-gradient-gold">Perguntas Frequentes</span>
           </h2>
         </div>
         <div className="space-y-3">
