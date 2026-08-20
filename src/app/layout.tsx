@@ -15,17 +15,53 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CursosPro - Os Melhores Cursos Online com Desconto",
-  description: "Encontre cursos online com desconto das principais plataformas: Hotmart, KiwiFy, Eduzz e mais. Marketing Digital, Programação, Design e muito mais.",
+  title: "CursosPro — Os Melhores Cursos Online em Oferta",
+  description:
+    "Encontre cursos online, ofertas e oportunidades de aprendizado das principais plataformas digitais em um só lugar. Compare, escolha e aprenda.",
+  keywords: [
+    "cursos online",
+    "cursos com desconto",
+    "marketplace de cursos",
+    "marketing digital",
+    "inteligencia artificial",
+    "trafego pago",
+    "design",
+    "empreendedorismo",
+    "renda extra",
+  ],
+  openGraph: {
+    title: "CursosPro — Os Melhores Cursos Online em Oferta",
+    description:
+      "Encontre cursos online, ofertas e oportunidades de aprendizado das principais plataformas digitais em um só lugar.",
+    url: "https://cursos-marketplace.vercel.app",
+    siteName: "CursosPro",
+    locale: "pt_BR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CursosPro — Os Melhores Cursos Online em Oferta",
+    description:
+      "Encontre cursos online, ofertas e oportunidades de aprendizado das principais plataformas digitais em um só lugar.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: LayoutProps<"/">) {
   return (
     <html
       lang="pt-BR"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
+      <body className="min-h-full flex flex-col bg-[#0D0D0D] text-white">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
