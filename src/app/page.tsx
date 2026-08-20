@@ -9,7 +9,7 @@ import WhyCursosPro from "@/components/WhyCursosPro";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 
-function HomePageContent() {
+export default function HomePage() {
   return (
     <div className="bg-[#0D0D0D] min-h-screen">
       <Hero />
@@ -17,16 +17,9 @@ function HomePageContent() {
       <FeaturedCarousel />
       <TopSellingSection />
       <FlashOffersSection />
-        <>
-          <WhyCursosPro />
-          <Testimonials />
-          <FAQ />
-        </>
-      )}
+      <WhyCursosPro />
+      <Testimonials />
+      <FAQ />
     </div>
   );
-}
-
-export default function HomePage() {
-  return <HomePageContent />;
 }
