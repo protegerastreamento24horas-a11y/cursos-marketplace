@@ -1,3 +1,8 @@
+export interface CourseLink {
+  label: string;
+  url: string;
+}
+
 export interface Course {
   id: string;
   slug: string;
@@ -10,6 +15,7 @@ export interface Course {
   originalPrice?: string;
   affiliateLink: string;
   checkoutLink?: string;
+  additionalLinks?: CourseLink[];
   platform: "kiwify" | "hotmart" | "eduzz" | "braip" | "outro";
   rating?: number;
   students?: number;
@@ -502,6 +508,9 @@ export const courses: Course[] = [
     price: "R$ 847,00",
     affiliateLink: "https://pay.kiwify.com.br/5S1sUfN?afid=TZHH84k2",
     checkoutLink: "https://pay.kiwify.com.br/5S1sUfN?afid=TZHH84k2",
+    additionalLinks: [
+      { label: "Checkout Alternativo", url: "https://pay.kiwify.com.br/bTIpR0f?afid=TZHH84k2" },
+    ],
     platform: "kiwify",
     rating: 4.7,
     students: 1000,
@@ -533,6 +542,10 @@ export const courses: Course[] = [
     price: "R$ 297,00",
     affiliateLink: "https://pay.kiwify.com.br/CqH4vCT?afid=yvGSOklk",
     checkoutLink: "https://pay.kiwify.com.br/CqH4vCT?afid=yvGSOklk",
+    additionalLinks: [
+      { label: "Checkout Alternativo", url: "https://pay.kiwify.com.br/42Vf08m?afid=yvGSOklk" },
+      { label: "Pagina de Vendas", url: "https://kiwify.app/knUxnk3?afid=yvGSOklk" },
+    ],
     platform: "kiwify",
     rating: 4.7,
     students: 2000,
@@ -549,6 +562,10 @@ export const courses: Course[] = [
     originalPrice: "R$ 590,00",
     affiliateLink: "https://pay.kiwify.com.br/nIxnMML?afid=KnOAnSDq",
     checkoutLink: "https://pay.kiwify.com.br/nIxnMML?afid=KnOAnSDq",
+    additionalLinks: [
+      { label: "Checkout Alternativo", url: "https://pay.kiwify.com.br/U5VZ1Gp?afid=KnOAnSDq" },
+      { label: "Pagina de Vendas", url: "https://kiwify.app/ymVlDYa?afid=KnOAnSDq" },
+    ],
     platform: "kiwify",
     rating: 4.8,
     students: 1500,
