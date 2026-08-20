@@ -7,15 +7,15 @@ const benefits = [
 
 export default function BenefitsBar() {
   return (
-    <section className="border-y border-[#2a2f3e]/40 bg-[#1B1F2A]/30">
+    <section className="border-y border-gray-200 bg-gray-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {benefits.map((b) => (
             <div key={b.title} className="flex items-start gap-3">
               <span className="text-xs font-bold text-[#FFC107] bg-[#FFC107]/10 h-8 w-8 rounded-lg flex items-center justify-center shrink-0 mt-0.5">{b.icon}</span>
               <div>
-                <h3 className="text-xs sm:text-sm font-bold text-white mb-0.5">{b.title}</h3>
-                <p className="text-xs text-[#D0D5E6]/45 leading-relaxed">{b.desc}</p>
+                <h3 className="text-xs sm:text-sm font-bold text-[#1B1F2A] mb-0.5">{b.title}</h3>
+                <p className="text-xs text-gray-500 leading-relaxed">{b.desc}</p>
               </div>
             </div>
           ))}

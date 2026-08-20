@@ -67,7 +67,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className="min-h-full flex flex-col bg-[#0D0D0D] text-white">
+      <body className="min-h-full flex flex-col bg-white text-[#1B1F2A]">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0D0D0D;
-  --foreground: #FFFFFF;
+  --background: #FFFFFF;
+  --foreground: #1B1F2A;
   --accent-gold: #FFC107;
   --accent-orange: #FF7A00;
   --accent-yellow: #FFE600;
-  --accent-silver: #D0D5E6;
-  --secondary: #1B1F2A;
+  --accent-silver: #6B7280;
+  --secondary: #F3F4F6;
 }
 
 @theme inline {
@@ -60,7 +60,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0D0D0D;
+  background: #F3F4F6;
 }
 
 ::-webkit-scrollbar-thumb {

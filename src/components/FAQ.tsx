@@ -36,7 +36,7 @@ export default function FAQ() {
     <section className="py-12 sm:py-16">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1B1F2A]">
             <span className="text-gradient-gold">Perguntas Frequentes</span>
           </h2>
         </div>
@@ -44,13 +44,13 @@ export default function FAQ() {
           {faqItems.map((item, i) => (
             <div
               key={i}
-              className="bg-[#1B1F2A]/60 rounded-xl border border-[#2a2f3e]/40 overflow-hidden"
+              className="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
                 className="w-full flex items-center justify-between p-4 sm:p-5 text-left"
               >
-                <span className="text-sm font-semibold text-white pr-4">{item.q}</span>
+                <span className="text-sm font-semibold text-[#1B1F2A] pr-4">{item.q}</span>
                 <svg
                   className={`h-5 w-5 text-[#FFC107] shrink-0 transition-transform duration-200 ${openIndex === i ? "rotate-180" : ""}`}
                   fill="none"
@@ -62,7 +62,7 @@ export default function FAQ() {
               </button>
               {openIndex === i && (
                 <div className="px-4 sm:px-5 pb-4 sm:pb-5 animate-fade-in">
-                  <p className="text-sm text-[#D0D5E6]/60 leading-relaxed">{item.a}</p>
+                  <p className="text-sm text-gray-500 leading-relaxed">{item.a}</p>
                 </div>
               )}
             </div>

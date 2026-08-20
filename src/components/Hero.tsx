@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#0D0D0D]">
+    <section className="relative overflow-hidden bg-white">
       <div className="relative w-full">
         <Image
           src="/banner.png"
@@ -15,7 +15,7 @@ export default function Hero() {
           className="w-full h-auto object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0D] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent" />
       </div>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
@@ -31,7 +31,7 @@ export default function Hero() {
           </Link>
           <Link
             href="/cursos"
-            className="inline-flex items-center justify-center gap-2 rounded-xl border border-[#2a2f3e] bg-[#1B1F2A]/50 px-6 py-3 text-sm font-semibold text-[#D0D5E6] hover:border-[#FFC107]/30 hover:text-[#FFC107] hover:bg-[#FFC107]/5 transition-all"
+            className="inline-flex items-center justify-center gap-2 rounded-xl border border-gray-200 bg-gray-50 px-6 py-3 text-sm font-semibold text-[#1B1F2A] hover:border-[#FFC107]/30 hover:text-[#FFC107] hover:bg-[#FFC107]/5 transition-all"
           >
             Ver Todos os Cursos
           </Link>
