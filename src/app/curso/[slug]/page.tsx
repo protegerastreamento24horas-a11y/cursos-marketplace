@@ -79,7 +79,7 @@ export default async function CoursePage({ params }: Props) {
 
         <div className="grid lg:grid-cols-[1fr,380px] gap-8 lg:gap-12">
           <div>
-            <div className="relative aspect-video rounded-2xl overflow-hidden bg-[#1B1F2A] mb-6">
+            <div className="relative aspect-video overflow-hidden bg-[#1B1F2A] mb-6">
               <Image
                 src={course.image}
                 alt={course.title}
@@ -130,7 +130,7 @@ export default async function CoursePage({ params }: Props) {
           </div>
 
           <div className="lg:sticky lg:top-24 lg:self-start">
-            <div className="bg-[#1B1F2A] rounded-2xl border border-[#2a2f3e]/60 p-6">
+            <div className="bg-[#1B1F2A] border border-[#2a2f3e]/60 p-6">
               <div className="mb-4">
                 <span className="text-3xl font-extrabold text-[#FFC107]">{course.price}</span>
                 {course.originalPrice && (
@@ -219,7 +219,7 @@ export default async function CoursePage({ params }: Props) {
                 <Link
                   key={c.id}
                   href={`/curso/${c.slug}`}
-                  className="group block bg-[#1B1F2A] rounded-xl border border-[#2a2f3e]/40 overflow-hidden hover:border-[#FFC107]/15 transition-all"
+                  className="group block bg-[#1B1F2A] border border-[#2a2f3e]/40 overflow-hidden hover:border-[#FFC107]/15 transition-all"
                 >
                   <div className="relative aspect-[4/3] bg-[#0D0D0D] overflow-hidden">
                     <Image

@@ -44,7 +44,7 @@ export default function FAQ() {
           {faqItems.map((item, i) => (
             <div
               key={i}
-              className="bg-[#1B1F2A]/60 rounded-xl border border-[#2a2f3e]/40 overflow-hidden"
+              className="bg-[#1B1F2A]/60 border border-[#2a2f3e]/40 overflow-hidden"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}

@@ -18,9 +18,9 @@ export default function WhyCursosPro() {
           {reasons.map((r) => (
             <div
               key={r.title}
-              className="bg-[#1B1F2A]/60 rounded-2xl border border-[#2a2f3e]/40 p-6 text-center hover:border-[#FFC107]/15 transition-colors"
+              className="bg-[#1B1F2A]/60 border border-[#2a2f3e]/40 p-6 text-center hover:border-[#FFC107]/15 transition-colors"
             >
-              <span className="text-sm font-bold text-[#FFC107] bg-[#FFC107]/10 h-10 w-10 rounded-xl flex items-center justify-center mx-auto mb-3">{r.icon}</span>
+              <span className="text-sm font-bold text-[#FFC107] bg-[#FFC107]/10 h-10 w-10 flex items-center justify-center mx-auto mb-3">{r.icon}</span>
               <h3 className="text-sm font-bold text-white mb-2">{r.title}</h3>
               <p className="text-xs text-[#D0D5E6]/50 leading-relaxed">{r.desc}</p>
             </div>

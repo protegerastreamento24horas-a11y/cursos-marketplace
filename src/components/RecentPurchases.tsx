@@ -47,15 +47,15 @@ export default function RecentPurchases() {
                 style={{ transformStyle: "preserve-3d" }}
               >
                 <div
-                  className="relative flex items-center gap-3 rounded-2xl border border-[#2a2f3e]/40 bg-gradient-to-br from-[#1B1F2A]/80 to-[#0D0D0D]/90 backdrop-blur-md px-5 py-3 transition-all duration-500 hover:border-[#FFC107]/30 hover:shadow-[0_0_30px_rgba(255,193,7,0.1)]"
+                  className="relative flex items-center gap-3 border border-[#2a2f3e]/40 bg-gradient-to-br from-[#1B1F2A]/80 to-[#0D0D0D]/90 backdrop-blur-md px-5 py-3 transition-all duration-500 hover:border-[#FFC107]/30 hover:shadow-[0_0_30px_rgba(255,193,7,0.1)]"
                   style={{
                     transform: "rotateY(-2deg) rotateX(1deg)",
                     transformStyle: "preserve-3d",
                   }}
                 >
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/[0.03] to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/[0.03] to-transparent pointer-events-none" />
 
-                  <div className={`h-9 w-9 rounded-xl bg-gradient-to-br ${platformColors[p.platform] || platformColors.KiwiFy} flex items-center justify-center shrink-0`}>
+                  <div className={`h-9 w-9 bg-gradient-to-br ${platformColors[p.platform] || platformColors.KiwiFy} flex items-center justify-center shrink-0`}>
                     <svg className="h-4.5 w-4.5 text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>

@@ -18,7 +18,7 @@ function PlatformBadge({ platform }: { platform: Course["platform"] }) {
     outro: "Outra",
   };
   return (
-    <span className={`inline-flex items-center rounded-md border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider ${styles[platform]}`}>
+    <span className={`inline-flex items-center border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider ${styles[platform]}`}>
       {labels[platform]}
     </span>
   );
@@ -53,7 +53,7 @@ function DiscountBadge({ price, originalPrice }: { price: string; originalPrice:
   const pct = Math.round((1 - current / original) * 100);
   if (pct <= 0) return null;
   return (
-    <span className="inline-flex items-center rounded-md bg-gradient-to-r from-[#FF4500] to-[#FF7A00] px-2 py-0.5 text-[10px] font-bold text-white shadow-lg">
+    <span className="inline-flex items-center bg-gradient-to-r from-[#FF4500] to-[#FF7A00] px-2 py-0.5 text-[10px] font-bold text-white shadow-lg">
       -{pct}% OFF
     </span>
   );
@@ -64,7 +64,7 @@ export default function CourseCard({ course, compact }: { course: Course; compac
 
   return (
     <Link href={link} className="group block">
-      <div className="relative bg-[#1B1F2A] rounded-2xl border border-[#2a2f3e]/60 overflow-hidden shadow-lg hover:shadow-[0_8px_40px_rgba(255,193,7,0.12)] transition-all duration-300 hover:-translate-y-1 hover:border-[#FFC107]/20">
+      <div className="relative bg-[#1B1F2A] border border-[#2a2f3e]/60 overflow-hidden shadow-lg hover:shadow-[0_8px_40px_rgba(255,193,7,0.12)] transition-all duration-300 hover:-translate-y-1 hover:border-[#FFC107]/20">
         <div className={`relative ${compact ? "aspect-[16/9]" : "aspect-[3/2] sm:aspect-[4/3]"} bg-[#0D0D0D] overflow-hidden`}>
           <Image
             src={course.image}
@@ -78,12 +78,12 @@ export default function CourseCard({ course, compact }: { course: Course; compac
           <div className="absolute top-2.5 left-2.5 flex items-center gap-1.5">
             {course.originalPrice && <DiscountBadge price={course.price} originalPrice={course.originalPrice} />}
             {course.badge === "hot" && (
-              <span className="inline-flex items-center rounded-md bg-[#FF4500] px-2 py-0.5 text-[10px] font-bold text-white">
+              <span className="inline-flex items-center bg-[#FF4500] px-2 py-0.5 text-[10px] font-bold text-white">
                 POPULAR
               </span>
             )}
             {course.badge === "bestseller" && (
-              <span className="inline-flex items-center rounded-md bg-[#FFC107] px-2 py-0.5 text-[10px] font-bold text-[#0D0D0D]">
+              <span className="inline-flex items-center bg-[#FFC107] px-2 py-0.5 text-[10px] font-bold text-[#0D0D0D]">
                 MAIS VENDIDO
               </span>
             )}

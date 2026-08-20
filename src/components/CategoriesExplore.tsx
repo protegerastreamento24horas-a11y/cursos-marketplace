@@ -23,9 +23,9 @@ export default function CategoriesExplore() {
               <CarouselItem key={cat.id}>
                 <Link
                   href={`/cursos?cat=${encodeURIComponent(cat.id)}`}
-                  className="group flex flex-col items-center gap-2 bg-[#1B1F2A]/60 rounded-2xl border border-[#2a2f3e]/40 p-5 hover:border-[#FFC107]/20 hover:bg-[#1B1F2A] transition-all h-full"
+                  className="group flex flex-col items-center gap-2 bg-[#1B1F2A]/60 border border-[#2a2f3e]/40 p-5 hover:border-[#FFC107]/20 hover:bg-[#1B1F2A] transition-all h-full"
                 >
-                  <span className="text-xs font-bold text-[#FFC107] bg-[#FFC107]/10 h-10 w-10 rounded-xl flex items-center justify-center">{cat.icon}</span>
+                  <span className="text-xs font-bold text-[#FFC107] bg-[#FFC107]/10 h-10 w-10 flex items-center justify-center">{cat.icon}</span>
                   <h3 className="text-xs font-bold text-white group-hover:text-[#FFC107] transition-colors text-center">
                     {cat.label}
                   </h3>

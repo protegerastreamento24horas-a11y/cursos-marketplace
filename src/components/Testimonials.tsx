@@ -12,7 +12,7 @@ export default function Testimonials() {
           {[1, 2, 3].map((i) => (
             <div
               key={i}
-              className="bg-[#1B1F2A]/40 rounded-2xl border border-[#2a2f3e]/30 p-6 flex flex-col items-center text-center min-h-[180px] justify-center"
+              className="bg-[#1B1F2A]/40 border border-[#2a2f3e]/30 p-6 flex flex-col items-center text-center min-h-[180px] justify-center"
             >
               <div className="h-10 w-10 rounded-full bg-[#FFC107]/10 mb-3 flex items-center justify-center">
                 <svg className="h-5 w-5 text-[#FFC107]/40" fill="currentColor" viewBox="0 0 20 20">

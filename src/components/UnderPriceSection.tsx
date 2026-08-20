@@ -28,7 +28,7 @@ export default function UnderPriceSection() {
             <CarouselItem key={course.id}>
               <Link
                 href={`/curso/${course.slug}`}
-                className="group block bg-[#1B1F2A] rounded-2xl border border-[#2a2f3e]/60 p-4 hover:border-[#FFC107]/20 hover:shadow-[0_4px_20px_rgba(255,193,7,0.08)] transition-all h-full"
+                className="group block bg-[#1B1F2A] border border-[#2a2f3e]/60 p-4 hover:border-[#FFC107]/20 hover:shadow-[0_4px_20px_rgba(255,193,7,0.08)] transition-all h-full"
               >
                 <span className="text-[10px] font-semibold text-[#FFC107]/60 uppercase tracking-wider">{course.category}</span>
                 <h3 className="text-sm font-bold text-white mt-2 mb-3 line-clamp-2 group-hover:text-[#FFC107] transition-colors leading-snug min-h-[2.5rem]">

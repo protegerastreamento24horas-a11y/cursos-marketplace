@@ -24,9 +24,9 @@ export default function GoalSection() {
               <CarouselItem key={goal.id}>
                 <Link
                   href={`/cursos?cat=${encodeURIComponent(goal.categories[0])}`}
-                  className="group flex items-center gap-3 bg-[#1B1F2A]/60 rounded-2xl border border-[#2a2f3e]/40 p-4 hover:border-[#FFC107]/20 hover:bg-[#1B1F2A] transition-all h-full"
+                  className="group flex items-center gap-3 bg-[#1B1F2A]/60 border border-[#2a2f3e]/40 p-4 hover:border-[#FFC107]/20 hover:bg-[#1B1F2A] transition-all h-full"
                 >
-                  <div className="h-10 w-10 rounded-xl bg-[#FFC107]/10 flex items-center justify-center shrink-0 group-hover:bg-[#FFC107]/15 transition-colors">
+                  <div className="h-10 w-10 bg-[#FFC107]/10 flex items-center justify-center shrink-0 group-hover:bg-[#FFC107]/15 transition-colors">
                     <span className="text-xs font-bold text-[#FFC107]">{goal.icon}</span>
                   </div>
                   <div className="flex-1 min-w-0">
