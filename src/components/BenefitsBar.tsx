@@ -12,7 +12,7 @@ export default function BenefitsBar() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {benefits.map((b) => (
             <div key={b.title} className="flex items-start gap-3">
-              <span className="text-xs font-bold text-[#FFC107] bg-[#FFC107]/10 h-8 w-8 rounded-lg flex items-center justify-center shrink-0 mt-0.5">{b.icon}</span>
+              <span className="text-xs font-bold text-[#FFC107] bg-[#FFC107]/10 h-8 w-8 flex items-center justify-center shrink-0 mt-0.5">{b.icon}</span>
               <div>
                 <h3 className="text-xs sm:text-sm font-bold text-white mb-0.5">{b.title}</h3>
                 <p className="text-xs text-[#D0D5E6]/45 leading-relaxed">{b.desc}</p>

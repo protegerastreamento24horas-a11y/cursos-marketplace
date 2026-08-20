@@ -78,7 +78,7 @@ function CursosContent() {
           <select
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value)}
-            className="rounded-lg border border-[#2a2f3e]/60 bg-[#1B1F2A]/80 px-3 py-2 text-xs text-[#D0D5E6]/80 outline-none transition-colors focus:border-[#FFC107]/60 cursor-pointer"
+            className="border border-[#2a2f3e]/60 bg-[#1B1F2A]/80 px-3 py-2 text-xs text-[#D0D5E6]/80 outline-none transition-colors focus:border-[#FFC107]/60 cursor-pointer"
           >
             <option value="destaque">Destaques</option>
             <option value="menor-preco">Menor Preco</option>

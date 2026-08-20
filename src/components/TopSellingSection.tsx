@@ -25,7 +25,7 @@ export default function TopSellingSection() {
             <CarouselItem key={course.id}>
               <div className="relative">
                 {i < 3 && (
-                  <div className="absolute -top-2 -left-1 z-10 text-xs font-bold bg-gradient-to-r from-[#FFC107] to-[#FF7A00] text-[#0D0D0D] h-6 w-6 rounded-full flex items-center justify-center shadow-lg">
+                  <div className="absolute -top-2 -left-1 z-10 text-xs font-bold bg-gradient-to-r from-[#FFC107] to-[#FF7A00] text-[#0D0D0D] h-6 w-6 flex items-center justify-center shadow-lg">
                     {i + 1}
                   </div>
                 )}

@@ -52,7 +52,7 @@ export default function Header() {
           <div className="flex items-center gap-2">
             <button
               onClick={() => setSearchOpen(!searchOpen)}
-              className="p-2.5 text-[#D0D5E6]/70 hover:text-[#FFC107] hover:bg-[#FFC107]/10 rounded-xl transition-all"
+              className="p-2.5 text-[#D0D5E6]/70 hover:text-[#FFC107] hover:bg-[#FFC107]/10 transition-all"
               aria-label="Buscar"
             >
               <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -62,7 +62,7 @@ export default function Header() {
 
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="md:hidden p-2.5 text-[#D0D5E6]/70 hover:text-[#FFC107] hover:bg-[#FFC107]/10 rounded-xl transition-all"
+              className="md:hidden p-2.5 text-[#D0D5E6]/70 hover:text-[#FFC107] hover:bg-[#FFC107]/10 transition-all"
               aria-label="Menu"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -88,7 +88,7 @@ export default function Header() {
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
                 autoFocus
-                className="w-full rounded-xl border border-[#2a2f3e] bg-[#1B1F2A] py-3 pl-11 pr-4 text-sm text-white placeholder-[#D0D5E6]/40 outline-none transition-colors focus:border-[#FFC107] focus:ring-2 focus:ring-[#FFC107]/20"
+                className="w-full border border-[#2a2f3e] bg-[#1B1F2A] py-3 pl-11 pr-4 text-sm text-white placeholder-[#D0D5E6]/40 outline-none transition-colors focus:border-[#FFC107] focus:ring-2 focus:ring-[#FFC107]/20"
               />
             </div>
           </form>

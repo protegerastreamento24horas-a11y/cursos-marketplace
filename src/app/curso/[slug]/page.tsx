@@ -90,7 +90,7 @@ export default async function CoursePage({ params }: Props) {
               />
               {discount && discount > 0 && (
                 <div className="absolute top-4 left-4">
-                  <span className="inline-flex items-center rounded-lg bg-gradient-to-r from-[#FF4500] to-[#FF7A00] px-3 py-1.5 text-sm font-bold text-white shadow-lg">
+                  <span className="inline-flex items-center bg-gradient-to-r from-[#FF4500] to-[#FF7A00] px-3 py-1.5 text-sm font-bold text-white shadow-lg">
                     -{discount}% OFF
                   </span>
                 </div>
@@ -98,10 +98,10 @@ export default async function CoursePage({ params }: Props) {
             </div>
 
             <div className="flex items-center gap-2 mb-4">
-              <span className="inline-flex items-center rounded-md border border-[#2a2f3e] bg-[#1B1F2A] px-2.5 py-1 text-xs font-semibold text-[#D0D5E6]/70 uppercase tracking-wider">
+              <span className="inline-flex items-center border border-[#2a2f3e] bg-[#1B1F2A] px-2.5 py-1 text-xs font-semibold text-[#D0D5E6]/70 uppercase tracking-wider">
                 {course.category}
               </span>
-              <span className="inline-flex items-center rounded-md border border-[#2a2f3e] bg-[#1B1F2A] px-2.5 py-1 text-xs font-semibold text-[#D0D5E6]/70 uppercase tracking-wider">
+              <span className="inline-flex items-center border border-[#2a2f3e] bg-[#1B1F2A] px-2.5 py-1 text-xs font-semibold text-[#D0D5E6]/70 uppercase tracking-wider">
                 {course.platform}
               </span>
             </div>
@@ -140,7 +140,7 @@ export default async function CoursePage({ params }: Props) {
 
               {discount && discount > 0 && (
                 <div className="mb-4">
-                  <span className="inline-flex items-center rounded-lg bg-[#FF4500]/10 border border-[#FF4500]/20 px-3 py-1.5 text-xs font-bold text-[#FF4500]">
+                  <span className="inline-flex items-center bg-[#FF4500]/10 border border-[#FF4500]/20 px-3 py-1.5 text-xs font-bold text-[#FF4500]">
                     Economize {discount}%
                   </span>
                 </div>
@@ -150,7 +150,7 @@ export default async function CoursePage({ params }: Props) {
                 href={course.checkoutLink || course.affiliateLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 w-full rounded-xl bg-gradient-to-r from-[#FFC107] to-[#FF7A00] px-6 py-4 text-base font-bold text-[#0D0D0D] shadow-[0_0_30px_rgba(255,193,7,0.2)] hover:shadow-[0_0_40px_rgba(255,193,7,0.35)] transition-all hover:scale-[1.01] active:scale-95"
+                className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#FFC107] to-[#FF7A00] px-6 py-4 text-base font-bold text-[#0D0D0D] shadow-[0_0_30px_rgba(255,193,7,0.2)] hover:shadow-[0_0_40px_rgba(255,193,7,0.35)] transition-all hover:scale-[1.01] active:scale-95"
               >
                 Quero Acessar Essa Oferta
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -163,7 +163,7 @@ export default async function CoursePage({ params }: Props) {
                   href={course.affiliateLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full mt-3 rounded-xl border border-[#2a2f3e] bg-[#0D0D0D]/50 px-6 py-3 text-sm font-medium text-[#D0D5E6]/70 hover:border-[#FFC107]/30 hover:text-[#FFC107] transition-all"
+                  className="flex items-center justify-center gap-2 w-full mt-3 border border-[#2a2f3e] bg-[#0D0D0D]/50 px-6 py-3 text-sm font-medium text-[#D0D5E6]/70 hover:border-[#FFC107]/30 hover:text-[#FFC107] transition-all"
                 >
                   Ver Pagina do Curso
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -180,7 +180,7 @@ export default async function CoursePage({ params }: Props) {
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-2 w-full rounded-xl border border-[#2a2f3e]/60 bg-[#0D0D0D]/30 px-5 py-2.5 text-xs font-medium text-[#D0D5E6]/50 hover:border-[#FFC107]/20 hover:text-[#FFC107]/80 transition-all"
+                      className="flex items-center justify-center gap-2 w-full border border-[#2a2f3e]/60 bg-[#0D0D0D]/30 px-5 py-2.5 text-xs font-medium text-[#D0D5E6]/50 hover:border-[#FFC107]/20 hover:text-[#FFC107]/80 transition-all"
                     >
                       {link.label}
                       <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

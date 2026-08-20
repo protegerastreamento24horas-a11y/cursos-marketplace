@@ -23,7 +23,7 @@ export default function SearchBar({ value, onChange, placeholder = "O que voce q
         placeholder={placeholder}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className={`w-full rounded-xl border border-[#2a2f3e]/80 bg-[#1B1F2A]/80 ${size === "large" ? "py-4 pl-11 pr-4 text-base" : "py-3 pl-10 pr-4 text-sm"} text-white placeholder-[#D0D5E6]/30 outline-none transition-all focus:border-[#FFC107]/60 focus:ring-2 focus:ring-[#FFC107]/10 focus:bg-[#1B1F2A]`}
+        className={`w-full border border-[#2a2f3e]/80 bg-[#1B1F2A]/80 ${size === "large" ? "py-4 pl-11 pr-4 text-base" : "py-3 pl-10 pr-4 text-sm"} text-white placeholder-[#D0D5E6]/30 outline-none transition-all focus:border-[#FFC107]/60 focus:ring-2 focus:ring-[#FFC107]/10 focus:bg-[#1B1F2A]`}
       />
     </div>
   );
