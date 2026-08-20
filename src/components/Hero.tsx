@@ -15,43 +15,26 @@ export default function Hero() {
           className="w-full h-auto object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0D] via-[#0D0D0D]/20 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0D0D0D]/60 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0D] via-transparent to-transparent" />
+      </div>
 
-        <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-10 lg:p-16">
-          <div className="mx-auto max-w-7xl">
-            <div className="inline-flex items-center gap-2 rounded-full bg-[#FFC107]/10 border border-[#FFC107]/20 px-4 py-1.5 mb-4 animate-fade-in-up">
-              <span className="text-sm">🔥</span>
-              <span className="text-xs font-bold text-[#FFC107] uppercase tracking-wider">Ofertas Selecionadas</span>
-            </div>
-
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.1] tracking-tight mb-3 animate-fade-in-up delay-100">
-              <span className="text-white">OS MELHORES </span>
-              <span className="text-gradient-gold">CURSOS ONLINE</span>
-            </h1>
-
-            <p className="text-base sm:text-lg text-[#D0D5E6]/80 mb-5 max-w-lg font-medium animate-fade-in-up delay-200">
-              Aprenda mais. Pague menos.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-3 animate-fade-in-up delay-300">
-              <Link
-                href="/cursos"
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#FFC107] to-[#FF7A00] px-6 py-3 text-sm font-bold text-[#0D0D0D] shadow-[0_0_30px_rgba(255,193,7,0.25)] hover:shadow-[0_0_40px_rgba(255,193,7,0.4)] transition-all hover:scale-[1.02] active:scale-95"
-              >
-                Explorar Ofertas
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-              <Link
-                href="/cursos"
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/5 backdrop-blur-sm px-6 py-3 text-sm font-semibold text-white hover:border-[#FFC107]/40 hover:text-[#FFC107] hover:bg-[#FFC107]/5 transition-all"
-              >
-                Ver Todos os Cursos
-              </Link>
-            </div>
-          </div>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <Link
+            href="#cursos"
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#FFC107] to-[#FF7A00] px-6 py-3 text-sm font-bold text-[#0D0D0D] shadow-[0_0_20px_rgba(255,193,7,0.2)] hover:shadow-[0_0_30px_rgba(255,193,7,0.35)] transition-all hover:scale-[1.02] active:scale-95"
+          >
+            Explorar Ofertas
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </Link>
+          <Link
+            href="/cursos"
+            className="inline-flex items-center justify-center gap-2 rounded-xl border border-[#2a2f3e] bg-[#1B1F2A]/50 px-6 py-3 text-sm font-semibold text-[#D0D5E6] hover:border-[#FFC107]/30 hover:text-[#FFC107] hover:bg-[#FFC107]/5 transition-all"
+          >
+            Ver Todos os Cursos
+          </Link>
         </div>
       </div>
     </section>
