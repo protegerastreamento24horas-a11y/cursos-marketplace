@@ -11,7 +11,7 @@ export default function SearchBar({ value, onChange, placeholder = "O que voce q
   return (
     <div className={`relative w-full ${size === "large" ? "max-w-2xl" : "max-w-md"}`}>
       <svg
-        className="absolute left-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400"
+        className="absolute left-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-[#D0D5E6]/40"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -23,7 +23,7 @@ export default function SearchBar({ value, onChange, placeholder = "O que voce q
         placeholder={placeholder}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className={`w-full rounded-xl border border-gray-200 bg-gray-50 ${size === "large" ? "py-4 pl-11 pr-4 text-base" : "py-3 pl-10 pr-4 text-sm"} text-[#1B1F2A] placeholder-gray-400 outline-none transition-all focus:border-[#FFC107]/60 focus:ring-2 focus:ring-[#FFC107]/10 focus:bg-white`}
+        className={`w-full rounded-xl border border-[#2a2f3e]/80 bg-[#1B1F2A]/80 ${size === "large" ? "py-4 pl-11 pr-4 text-base" : "py-3 pl-10 pr-4 text-sm"} text-white placeholder-[#D0D5E6]/30 outline-none transition-all focus:border-[#FFC107]/60 focus:ring-2 focus:ring-[#FFC107]/10 focus:bg-[#1B1F2A]`}
       />
     </div>
   );

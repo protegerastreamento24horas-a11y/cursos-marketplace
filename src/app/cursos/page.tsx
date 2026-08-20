@@ -57,7 +57,7 @@ function CursosContent() {
     <div className="bg-white min-h-screen">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="mb-8">
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#1B1F2A]">
+          <h1 className="text-3xl sm:text-4xl font-bold text-white">
             Todos os{" "}
             <span className="text-gradient-gold">Cursos</span>
           </h1>
@@ -78,7 +78,7 @@ function CursosContent() {
           <select
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value)}
-            className="rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-xs text-gray-600 outline-none transition-colors focus:border-[#FFC107]/60 cursor-pointer"
+            className="rounded-lg border border-[#2a2f3e]/60 bg-[#1B1F2A]/80 px-3 py-2 text-xs text-[#D0D5E6]/80 outline-none transition-colors focus:border-[#FFC107]/60 cursor-pointer"
           >
             <option value="destaque">Destaques</option>
             <option value="menor-preco">Menor Preco</option>

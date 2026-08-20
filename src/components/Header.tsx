@@ -32,8 +32,8 @@ export default function Header() {
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/95 backdrop-blur-xl shadow-md border-b border-gray-100"
-          : "bg-white/80 backdrop-blur-md border-b border-gray-100"
+          ? "bg-[#0D0D0D]/95 backdrop-blur-xl shadow-[0_4px_30px_rgba(0,0,0,0.6)] border-b border-[#FFC107]/10"
+          : "bg-[#0D0D0D]/80 backdrop-blur-md border-b border-[#1B1F2A]/50"
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -52,7 +52,7 @@ export default function Header() {
           <div className="flex items-center gap-2">
             <button
               onClick={() => setSearchOpen(!searchOpen)}
-              className="p-2.5 text-gray-500 hover:text-[#FFC107] hover:bg-[#FFC107]/10 rounded-xl transition-all"
+              className="p-2.5 text-[#D0D5E6]/70 hover:text-[#FFC107] hover:bg-[#FFC107]/10 rounded-xl transition-all"
               aria-label="Buscar"
             >
               <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -62,7 +62,7 @@ export default function Header() {
 
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="md:hidden p-2.5 text-gray-500 hover:text-[#FFC107] hover:bg-[#FFC107]/10 rounded-xl transition-all"
+              className="md:hidden p-2.5 text-[#D0D5E6]/70 hover:text-[#FFC107] hover:bg-[#FFC107]/10 rounded-xl transition-all"
               aria-label="Menu"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -79,7 +79,7 @@ export default function Header() {
         {searchOpen && (
           <form onSubmit={handleSearch} className="pb-4 animate-fade-in">
             <div className="relative">
-              <svg className="absolute left-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="absolute left-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-[#D0D5E6]/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
               <input
@@ -88,15 +88,15 @@ export default function Header() {
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
                 autoFocus
-                className="w-full rounded-xl border border-gray-200 bg-gray-50 py-3 pl-11 pr-4 text-sm text-[#1B1F2A] placeholder-gray-400 outline-none transition-colors focus:border-[#FFC107] focus:ring-2 focus:ring-[#FFC107]/20"
+                className="w-full rounded-xl border border-[#2a2f3e] bg-[#1B1F2A] py-3 pl-11 pr-4 text-sm text-white placeholder-[#D0D5E6]/40 outline-none transition-colors focus:border-[#FFC107] focus:ring-2 focus:ring-[#FFC107]/20"
               />
             </div>
           </form>
         )}
 
         {menuOpen && (
-          <div className="md:hidden pb-4 border-t border-gray-100 mt-2 pt-3 animate-fade-in">
-            <p className="text-xs text-gray-400 px-4 pb-2">Busque cursos na barra acima</p>
+          <div className="md:hidden pb-4 border-t border-[#1B1F2A]/50 mt-2 pt-3 animate-fade-in">
+            <p className="text-xs text-[#D0D5E6]/30 px-4 pb-2">Busque cursos na barra acima</p>
           </div>
         )}
       </div>

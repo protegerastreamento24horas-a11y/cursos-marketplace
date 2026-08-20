@@ -15,29 +15,29 @@ export default function UnderPriceSection() {
   if (under50.length === 0) return null;
 
   return (
-    <section className="py-8 sm:py-12 bg-gray-50">
+    <section className="py-8 sm:py-12 bg-[#1B1F2A]/20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-4">
-          <h2 className="text-xl sm:text-2xl font-bold text-[#1B1F2A]">
+          <h2 className="text-xl sm:text-2xl font-bold text-white">
             <span className="text-gradient-gold">Cursos Ate R$50</span>
           </h2>
-          <p className="text-xs text-gray-400 mt-1">Conhecimento que cabe no bolso</p>
+          <p className="text-xs text-[#D0D5E6]/40 mt-1">Conhecimento que cabe no bolso</p>
         </div>
         <Carousel id="under-price">
           {under50.map((course) => (
             <CarouselItem key={course.id}>
               <Link
                 href={`/curso/${course.slug}`}
-                className="group block bg-white rounded-2xl border border-gray-200 p-4 hover:border-[#FFC107]/20 hover:shadow-sm transition-all h-full"
+                className="group block bg-[#1B1F2A] rounded-2xl border border-[#2a2f3e]/60 p-4 hover:border-[#FFC107]/20 hover:shadow-[0_4px_20px_rgba(255,193,7,0.08)] transition-all h-full"
               >
                 <span className="text-[10px] font-semibold text-[#FFC107]/60 uppercase tracking-wider">{course.category}</span>
-                <h3 className="text-sm font-bold text-[#1B1F2A] mt-2 mb-3 line-clamp-2 group-hover:text-[#FFC107] transition-colors leading-snug min-h-[2.5rem]">
+                <h3 className="text-sm font-bold text-white mt-2 mb-3 line-clamp-2 group-hover:text-[#FFC107] transition-colors leading-snug min-h-[2.5rem]">
                   {course.title}
                 </h3>
                 <div className="flex items-baseline gap-2 mb-3">
                   <span className="text-lg font-extrabold text-[#FFC107]">{course.price}</span>
                   {course.originalPrice && (
-                    <span className="text-xs text-gray-400 line-through">{course.originalPrice}</span>
+                    <span className="text-xs text-[#D0D5E6]/30 line-through">{course.originalPrice}</span>
                   )}
                 </div>
                 <span className="inline-flex items-center gap-1 text-xs font-semibold text-[#FFC107] group-hover:gap-2 transition-all">

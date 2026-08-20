@@ -7,10 +7,10 @@ const reasons = [
 
 export default function WhyCursosPro() {
   return (
-    <section className="py-12 sm:py-16 bg-gray-50">
+    <section className="py-12 sm:py-16 bg-[#1B1F2A]/20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1B1F2A]">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white">
             <span className="text-gradient-gold">Por Que Encontrar Seu Curso no CursosPro?</span>
           </h2>
         </div>
@@ -18,11 +18,11 @@ export default function WhyCursosPro() {
           {reasons.map((r) => (
             <div
               key={r.title}
-              className="bg-white rounded-2xl border border-gray-200 p-6 text-center hover:border-[#FFC107]/20 transition-colors"
+              className="bg-[#1B1F2A]/60 rounded-2xl border border-[#2a2f3e]/40 p-6 text-center hover:border-[#FFC107]/15 transition-colors"
             >
               <span className="text-sm font-bold text-[#FFC107] bg-[#FFC107]/10 h-10 w-10 rounded-xl flex items-center justify-center mx-auto mb-3">{r.icon}</span>
-              <h3 className="text-sm font-bold text-[#1B1F2A] mb-2">{r.title}</h3>
-              <p className="text-xs text-gray-500 leading-relaxed">{r.desc}</p>
+              <h3 className="text-sm font-bold text-white mb-2">{r.title}</h3>
+              <p className="text-xs text-[#D0D5E6]/50 leading-relaxed">{r.desc}</p>
             </div>
           ))}
         </div>
