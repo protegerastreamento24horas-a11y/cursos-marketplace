@@ -280,4 +280,18 @@ export const courses: Course[] = [
     students: 5000,
     featured: true,
   },
+  {
+    id: "19",
+    title: "Método Além das Fronteiras",
+    description: "Descubra como gerar renda extra explorando oportunidades internacionais. Estratégias comprovadas para faturar em dólar/euro trabalhando de qualquer lugar do Brasil, mesmo começando do zero.",
+    image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/oWHAg6y3MgvSsTy/img_builder_8e3ae727-58be-495a-bbca-153f9715423d_7bc608189a974b2282fd8ea1110c9e24.png",
+    category: "Negócios",
+    price: "R$ 157,00",
+    affiliateLink: "https://pay.kiwify.com.br/X7QpFX1?afid=WPUFYNZG",
+    checkoutLink: "https://pay.kiwify.com.br/X7QpFX1?afid=WPUFYNZG",
+    platform: "kiwify",
+    rating: 4.8,
+    students: 3000,
+    featured: true,
+  },
 ];
