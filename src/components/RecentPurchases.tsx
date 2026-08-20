@@ -26,7 +26,7 @@ export default function RecentPurchases() {
   return (
     <section className="py-5 border-y border-[#2a2f3e]/40 bg-gradient-to-b from-[#0D0D0D] via-[#1B1F2A]/10 to-[#0D0D0D] overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-3">
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex items-center gap-2">
           <span className="relative flex h-2 w-2">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
@@ -34,10 +34,6 @@ export default function RecentPurchases() {
           <p className="text-[10px] font-bold text-[#D0D5E6]/50 uppercase tracking-[0.2em]">
             Compras recentes ao vivo
           </p>
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
-          </span>
         </div>
       </div>
 
