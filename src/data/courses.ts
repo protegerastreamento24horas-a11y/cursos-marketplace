@@ -1139,6 +1139,31 @@ export const courses: Course[] = [
     rating: 4.7,
     students: 2000,
   },
+  {
+    id: "59",
+    slug: "instaninja-autogramacao-instagram",
+    title: "InstaNinja - Automacao para Instagram",
+    description: "Responda comentarios e directs automaticamente, envie boas-vindas e nao perca vendas, seguidores ou clientes no Instagram. API oficial da Meta.",
+    longDescription: "Automacao oficial para Instagram via API da Meta. Responda comentarios, DMs, Stories e Remix automaticamente. Autoatendimento, boas-vindas e automacao em lives para vender mais no Instagram.",
+    image: "https://storage.googleapis.com/gpt-engineer-file-uploads/0f3NVSkMKFVYOpgvNvVkggjGnwv2/social-images/social-1775080158860-ChatGPT_Image_Dec_12,_2025,_11_13_43_AM.webp",
+    category: "Marketing Digital",
+    price: "R$ 39,90",
+    affiliateLink: "https://pay.kiwify.com.br/okQftuE?afid=w5xhfhLT",
+    checkoutLink: "https://pay.kiwify.com.br/okQftuE?afid=w5xhfhLT",
+    additionalLinks: [
+      { label: "Autoatendimento e Boas-Vindas - R$ 59,90", url: "https://pay.kiwify.com.br/BylBVXn?afid=w5xhfhLT" },
+      { label: "Creditos Ilimitados - R$ 49,90", url: "https://pay.kiwify.com.br/FYuMgax?afid=w5xhfhLT" },
+      { label: "Plano 1000 - R$ 49,90", url: "https://pay.kiwify.com.br/okQftuE?afid=w5xhfhLT" },
+      { label: "Combo Ilimitado - R$ 89,90", url: "https://pay.kiwify.com.br/gRKcd0c?afid=w5xhfhLT" },
+      { label: "Creditos Ilimitados - R$ 59,90", url: "https://pay.kiwify.com.br/FdR4ysv?afid=w5xhfhLT" },
+      { label: "Automacao em Lives - R$ 52,90", url: "https://pay.kiwify.com.br/89JENUs?afid=w5xhfhLT" },
+      { label: "Autoatendimento e Boas-Vindas - R$ 69,90", url: "https://pay.kiwify.com.br/oDeJdkb?afid=w5xhfhLT" },
+      { label: "Pagina de Vendas", url: "https://kiwify.app/HFyT7xc?afid=w5xhfhLT" },
+    ],
+    platform: "kiwify",
+    rating: 4.8,
+    students: 5000,
+  },
 ];
 
 export const getCourseBySlug = (slug: string): Course | undefined => {
