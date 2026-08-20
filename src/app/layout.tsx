@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
+import { Geist, Geist_Mono, Ethnocentric } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -14,10 +14,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const ethnocentric = Ethnocentric({
+  variable: "--font-ethnocentric",
   subsets: ["latin"],
-  weight: ["700", "800", "900"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -62,7 +62,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${ethnocentric.variable} h-full antialiased`}
     >
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />

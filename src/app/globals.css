@@ -14,12 +14,12 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-serif: var(--font-playfair);
+  --font-serif: var(--font-ethnocentric);
   --font-mono: var(--font-geist-mono);
 }
 
 h1, h2, h3 {
-  font-family: var(--font-playfair), Georgia, "Times New Roman", serif;
+  font-family: var(--font-ethnocentric), Arial, Helvetica, sans-serif;
 }
 
 * {
