@@ -575,7 +575,7 @@ export const courses: Course[] = [
     title: "Adesiva Pro",
     description: "Ferramenta profissional para criar adesivos e produtos personalizados. Interface intuitiva com templates prontos e exportacao em alta qualidade.",
     longDescription: "Plataforma completa para criacao de adesivos e produtos personalizados. Templates profissionais, edicao avancada e exportacao em alta resolucao.",
-    image: "https://aws-assets.kiwify.com.br/DwKBIBLvz2leosq/Design-sem-nome-3_13fd0c4090ea4be0bc18ea992deb3540.png",
+    image: "https://aws-assets.kiwify.com.br/DwKBIBLvz2leosq/img_builder_a75b62da-3127-47dd-8bf5-5b435e7e7605_6c7096f08fdb4f8f96bd66d67af77bd1.png",
     category: "Design",
     price: "R$ 29,90/mes",
     affiliateLink: "https://kiwify.app/cNe7dPq?afid=lKRDjHV5",
