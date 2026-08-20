@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-
 const purchases = [
   { name: "Carlos M.", course: "Marketing Digital 360", time: "2 min" },
   { name: "Ana P.", course: "Trafego Pago Pro", time: "5 min" },
@@ -18,38 +16,7 @@ const purchases = [
 ];
 
 export default function RecentPurchases() {
-  const scrollRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const el = scrollRef.current;
-    if (!el) return;
-
-    let animId: number;
-    let speed = 0.5;
-
-    const animate = () => {
-      if (el.scrollLeft >= el.scrollWidth - el.clientWidth) {
-        el.scrollLeft = 0;
-      }
-      el.scrollLeft += speed;
-      animId = requestAnimationFrame(animate);
-    };
-
-    animId = requestAnimationFrame(animate);
-
-    const handleEnter = () => (speed = 0);
-    const handleLeave = () => (speed = 0.5);
-    el.addEventListener("mouseenter", handleEnter);
-    el.addEventListener("mouseleave", handleLeave);
-
-    return () => {
-      cancelAnimationFrame(animId);
-      el.removeEventListener("mouseenter", handleEnter);
-      el.removeEventListener("mouseleave", handleLeave);
-    };
-  }, []);
-
-  const items = [...purchases, ...purchases];
+  const items = [...purchases, ...purchases, ...purchases];
 
   return (
     <section className="py-4 border-y border-[#2a2f3e]/40 bg-[#1B1F2A]/20 overflow-hidden">
@@ -64,30 +31,28 @@ export default function RecentPurchases() {
           </p>
         </div>
       </div>
-      <div
-        ref={scrollRef}
-        className="flex gap-3 overflow-hidden whitespace-nowrap px-4 sm:px-6 lg:px-8"
-        style={{ scrollBehavior: "auto" }}
-      >
-        {items.map((p, i) => (
-          <div
-            key={i}
-            className="flex-shrink-0 flex items-center gap-3 rounded-xl border border-[#2a2f3e]/50 bg-[#1B1F2A]/60 backdrop-blur-sm px-4 py-2.5"
-          >
-            <div className="h-8 w-8 rounded-full bg-gradient-to-br from-[#FFC107]/20 to-[#FF7A00]/20 border border-[#FFC107]/20 flex items-center justify-center shrink-0">
-              <svg className="h-4 w-4 text-[#FFC107]/70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-              </svg>
+      <div className="overflow-hidden">
+        <div className="flex gap-3 w-max animate-scroll">
+          {items.map((p, i) => (
+            <div
+              key={i}
+              className="flex-shrink-0 flex items-center gap-3 rounded-xl border border-[#2a2f3e]/50 bg-[#1B1F2A]/60 backdrop-blur-sm px-4 py-2.5"
+            >
+              <div className="h-8 w-8 rounded-full bg-gradient-to-br from-[#FFC107]/20 to-[#FF7A00]/20 border border-[#FFC107]/20 flex items-center justify-center shrink-0">
+                <svg className="h-4 w-4 text-[#FFC107]/70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-xs font-semibold text-[#D0D5E6]/80">{p.name}</span>
+                <span className="text-[10px] text-[#D0D5E6]/40">
+                  comprou <span className="text-[#FFC107]/60 font-medium">{p.course}</span>
+                </span>
+              </div>
+              <span className="text-[9px] text-[#D0D5E6]/25 ml-2">ha {p.time}</span>
             </div>
-            <div className="flex flex-col">
-              <span className="text-xs font-semibold text-[#D0D5E6]/80">{p.name}</span>
-              <span className="text-[10px] text-[#D0D5E6]/40">
-                comprou <span className="text-[#FFC107]/60 font-medium">{p.course}</span>
-              </span>
-            </div>
-            <span className="text-[9px] text-[#D0D5E6]/25 ml-2">ha {p.time}</span>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
