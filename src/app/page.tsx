@@ -5,8 +5,6 @@ import BenefitsBar from "@/components/BenefitsBar";
 import FeaturedCarousel from "@/components/FeaturedCarousel";
 import TopSellingSection from "@/components/TopSellingSection";
 import FlashOffersSection from "@/components/FlashOffersSection";
-import WhyCursosPro from "@/components/WhyCursosPro";
-import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 
 export default function HomePage() {
@@ -17,8 +15,6 @@ export default function HomePage() {
       <FeaturedCarousel />
       <TopSellingSection />
       <FlashOffersSection />
-      <WhyCursosPro />
-      <Testimonials />
       <FAQ />
     </div>
   );
