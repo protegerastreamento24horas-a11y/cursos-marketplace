@@ -28,14 +28,15 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-[#0D0D0D]">
-      <div className="relative w-full aspect-[16/5] sm:aspect-[16/4]">
+      <div className="relative w-full" style={{ paddingTop: "50%" }}>
         {banners.map((banner, i) => (
           <Image
             key={banner.src}
             src={banner.src}
             alt={banner.alt}
-            fill
-            className={`object-cover transition-opacity duration-700 ${i === current ? "opacity-100" : "opacity-0"}`}
+            width={1920}
+            height={960}
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${i === current ? "opacity-100" : "opacity-0"}`}
             priority={i === 0}
             sizes="100vw"
           />
