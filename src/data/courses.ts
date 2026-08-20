@@ -266,4 +266,18 @@ export const courses: Course[] = [
     rating: 4.6,
     students: 3000,
   },
+  {
+    id: "18",
+    title: "Carrosséis Magnéticos",
+    description: "Pack completo com mais de 2800 vídeos narrados com IA e humanizados para criar carrosséis magnéticos que convertem. Atualizações constantes e método lucrativo para afiliados e criadores de conteúdo.",
+    image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/1qFoSkSgKUkroBp/img_builder_2a5280f0-e142-4561-90b1-5ffb9f1840e2_4066b6b4da99453bac7c02021e2b329c.png",
+    category: "Marketing Digital",
+    price: "R$ 89,90/ano",
+    affiliateLink: "https://kiwify.app/BV7E82D?afid=JElhbDy3",
+    checkoutLink: "https://pay.kiwify.com.br/CZ6U6X8?afid=JElhbDy3",
+    platform: "kiwify",
+    rating: 4.8,
+    students: 5000,
+    featured: true,
+  },
 ];
