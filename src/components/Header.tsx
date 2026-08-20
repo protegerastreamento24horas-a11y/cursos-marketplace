@@ -36,24 +36,6 @@ export default function Header() {
             </div>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="relative px-4 py-2 text-sm font-semibold text-[#D0D5E6] hover:text-[#FFC107] transition-colors rounded-lg hover:bg-[#FFC107]/5"
-              >
-                {link.label}
-              </Link>
-            ))}
-            <Link
-              href="/cursos"
-              className="ml-4 px-5 py-2.5 text-sm font-bold text-[#0D0D0D] bg-gradient-to-r from-[#FFC107] to-[#FF7A00] rounded-xl hover:shadow-[0_0_20px_rgba(255,193,7,0.4)] transition-all hover:scale-105 active:scale-95"
-            >
-              Ver Cursos
-            </Link>
-          </nav>
-
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="md:hidden p-2.5 text-[#D0D5E6] hover:text-[#FFC107] hover:bg-[#FFC107]/10 rounded-xl transition-all"
@@ -67,28 +49,6 @@ export default function Header() {
             </svg>
           </button>
         </div>
-
-        {menuOpen && (
-          <div className="md:hidden pb-4 border-t border-[#1B1F2A] mt-2 pt-4 space-y-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className="block py-3 px-4 text-sm font-semibold text-[#D0D5E6] hover:text-[#FFC107] hover:bg-[#FFC107]/5 rounded-xl transition-all"
-              >
-                {link.label}
-              </Link>
-            ))}
-            <Link
-              href="/cursos"
-              onClick={() => setMenuOpen(false)}
-              className="block py-3 px-4 text-sm font-bold text-[#0D0D0D] bg-gradient-to-r from-[#FFC107] to-[#FF7A00] rounded-xl text-center mt-2"
-            >
-              Ver Cursos
-            </Link>
-          </div>
-        )}
       </div>
     </header>
   );
