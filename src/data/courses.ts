@@ -34,7 +34,7 @@ export const courses: Course[] = [
   {
     id: "1",
     title: "COMUNIDADE MILHAS 3.0",
-    description: "Economize até 80% nas suas passagens aéreas com estratégias comprovadas de acúmulo de milhas. A comunidade mais completa do Brasil sobre milhas de voo, com mentorias ao vivo, grupo exclusivo e passo a passo para você viajar pagando muito menos.",
+    description: "Viaje pagando até 80% menos! A comunidade #1 do Brasil sobre milhas de voo com mais de 5.000 alunos. Mentorias ao vivo, grupo VIP e o passo a passo definitivo para você viajar o mundo gastando pouco.",
     image: "https://silvinotoiti.com/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-13-at-21.02.18.jpeg",
     category: "Finanças",
     price: "R$ 147,00",
@@ -49,7 +49,7 @@ export const courses: Course[] = [
   {
     id: "2",
     title: "PLANO 10K PRO – Shara Barros",
-    description: "Mentoria intensiva da Shara Barros para quem quer faturar R$ 10.000 por mês. Estratégias avançadas de vendas, copywriting, tráfego pago e mentalidade de empreendedor de sucesso — com acompanhamento direto e suporte próximo.",
+    description: "Fature R$ 10.000/mês com a mentoria mais hands-on do Brasil. Copy, tráfego, vendas e mentalidade — tudo com acompanhamento direto da Shara Barros para você decolar seus resultados.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/xbPFw3SJj5qSBzh/img_builder_a18cd6bc-d6ea-4b8c-bf06-71adbbd35a71_f51576458b4a4d1d8684f3132d12ddae.png",
     category: "Empreendedorismo",
     price: "R$ 297,00",
@@ -64,7 +64,7 @@ export const courses: Course[] = [
   {
     id: "3",
     title: "Mãe de Milhões – Fabi Brasil",
-    description: "Comunidade exclusiva para mães que querem construir uma renda extra pelo celular. Passo a passo para criar seu negócio online, conquistar liberdade financeira e ter tempo de qualidade com a família — mesmo começando do absoluto zero.",
+    description: "Mães que faturam! Aprenda a construir uma renda extra sólida pelo celular. Método 100% prático para conquistar liberdade financeira sem abrir mão da sua família.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=128/pD7AzTzHvW2vmE7/WhatsApp-Image-2026-05-27-at-16.30.13_a57d7be3a06a41b699977b1247f2cdcd.jpeg",
     category: "Empreendedorismo",
     price: "R$ 69,90",
@@ -77,7 +77,7 @@ export const courses: Course[] = [
   {
     id: "4",
     title: "Método Roque Facebook ADS",
-    description: "Domine o Facebook e Instagram Ads com o método testado e aprovado do Ramon Roque. Aprenda a criar campanhas de alta conversão, escalar lucros e evitar os erros que 90% dos iniciantes cometem — de forma simples e direta.",
+    description: "Domine Facebook e Instagram Ads com o método do Ramon Roque. Campanhas de alta conversão, escalabilidade e lucro real — sem desperdiçar dinheiro com erros bobos.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/iZl7n6WEbhVvaot/img_builder_2df43b7b-6815-42fe-9def-3f78385816dd_2f8f3f569b4945d185b4eceba604172d.png",
     category: "Tráfego Pago",
     price: "R$ 67,00",
@@ -91,7 +91,7 @@ export const courses: Course[] = [
   {
     id: "5",
     title: "Método ZN TikTok Shop",
-    description: "Descubra como montar sua loja no TikTok Shop e começar a faturar do zero. O método passo a passo que já transformou a vida de milhares de pessoas, ensinando desde a criação da conta até as estratégias avançadas de tráfego e seleção de produtos lucrativos.",
+    description: "Monte sua loja no TikTok Shop e fature do zero. O mesmo método que já transformou milhares de vendedores — da criação da conta às estratégias avançadas de tráfego.",
     image: "https://aws-assets.kiwify.com.br/bsKCU9H6aGYK4nM/2af6dc72-5a2c-4298-9bfc-bfbf8bcea1ef_1fabeaf6b9ac43289072dee200035ac7.jpg",
     category: "Tráfego Pago",
     price: "R$ 59,90",
@@ -106,7 +106,7 @@ export const courses: Course[] = [
   {
     id: "6",
     title: "FIGURINHAS SWEET STORIES",
-    description: "Aprenda a criar e vender pacotes de figurinhas personalizadas para WhatsApp, Instagram e Telegram. Técnicas profissionais de design para transformar sua criatividade em uma fonte de renda consistente — mesmo sem experiência prévia.",
+    description: "Crie e venda figurinhas que viralizam! Aprenda design profissional para WhatsApp e Telegram — mesmo sem experiência. Transforme criatividade em renda extra.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=128/ZGRmdxXwTg8kR30/74C72AFA-3635-42B1-B191-66AFB7434B1D_a71373b8d6ed4aa7a382d74b26f07289.png",
     category: "Design",
     price: "R$ 37,90",
@@ -119,7 +119,7 @@ export const courses: Course[] = [
   {
     id: "7",
     title: "21 Dias de Conexão com Deus",
-    description: "Transforme sua vida espiritual em apenas 21 dias. Um programa diário com orações poderosas, reflexões profundas e meditações guiadas para fortalecer sua fé, trazer paz ao coração e restaurar sua conexão com o divino.",
+    description: "21 dias que vão transformar sua vida espiritual. Orações poderosas, reflexões profundas e meditações guiadas para restaurar sua paz e fortalecer sua fé.",
     image: "https://aws-assets.kiwify.com.br/dXWpVhZg44OEr4x/prayer_8797c107953b4feba6d7d15a227be06f.png",
     category: "Desenvolvimento Pessoal",
     price: "R$ 14,99",
@@ -132,7 +132,7 @@ export const courses: Course[] = [
   {
     id: "8",
     title: "LUMI – Ofertas com Inteligência",
-    description: "Automatize suas vendas com inteligência artificial. A LUMI encontra ofertas quentes, cria anúncios personalizados e divulga nos seus grupos automaticamente — transformando cada membro em um cliente fiel, 24 horas por dia.",
+    description: "Venda no automático 24h por dia! IA que encontra ofertas quentes, cria anúncios perfeitos e divulga nos seus grupos — você só acompanha os resultados.",
     image: "https://lumiofertasinteligentes.com.br/wp-content/uploads/2026/01/lumi-ofertas-com-inteligencia.jpg",
     category: "Marketing Digital",
     price: "R$ 187,00/mês",
@@ -146,7 +146,7 @@ export const courses: Course[] = [
   {
     id: "9",
     title: "Pack Achadinhos Virais – Luana Mayara",
-    description: "O pack mais completo da Luana Mayara com dezenas de produtos digitais prontos para usar e revender. Templates, scripts, planilhas e muito material exclusivo para impulsionar seus resultados online sem precisar criar do zero.",
+    description: "Pack com dezenas de produtos digitais prontos para usar e revender. Templates, scripts e material exclusivo — tudo pronto pra você começar a faturar hoje.",
     image: "https://luanamayara.com/wp-content/uploads/2026/08/15-mil-37-640x1024.webp",
     category: "Marketing Digital",
     price: "R$ 29,00",
@@ -160,7 +160,7 @@ export const courses: Course[] = [
   {
     id: "10",
     title: "Aprenda Crochê – Do Básico ao Avançado",
-    description: "Aprenda a criar peças lindas de crochê mesmo que nunca tenha segurado uma agulha! Mais de 120 aulas em vídeo, projetos práticos, bônus exclusivos e certificado — um guia completo para transformar sua criatividade em renda extra.",
+    description: "120+ aulas em vídeo para você aprender crochê do zero ao avançado. Projetos práticos, bônus exclusivos e certificado — e ainda transforma sua arte em renda extra!",
     image: "https://aprendacroche.art.br/wp-content/uploads/2024/06/logoac.webp",
     category: "Artesanato",
     price: "R$ 197,00",
@@ -175,7 +175,7 @@ export const courses: Course[] = [
   {
     id: "11",
     title: "Método Rainha da Casa – Gustavo Henrique",
-    description: "Transforme seu lar em uma máquina de dinheiro com o método que já ajudou milhares de mães e donas de casa a construir uma rendaextra sólida pelo celular. Passo a passo simples, sem complicação e com suporte direto.",
+    description: "Transforme sua casa em uma fábrica de dinheiro! Método comprovado para mães e donas de casa construírem renda extra sólida pelo celular — do zero ao primeiro faturamento.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/k0HBizjRBhnwaOs/ChatGPT-Image-29-de-jun.-de-2026-22_06_15_40fd943ed63a47f3a760ad5d48da9487.png",
     category: "Empreendedorismo",
     price: "R$ 29,90",
@@ -188,7 +188,7 @@ export const courses: Course[] = [
   {
     id: "12",
     title: "IA Divulgadora",
-    description: "Domine o uso de Inteligência Artificial para divulgar qualquer produto ou serviço. Aprenda a criar anúncios, landing pages e campanhas completas usando IA — reduzindo custos e multiplicando seus resultados em minutos.",
+    description: "Use IA para divulgar qualquer produto! Crie anúncios, landing pages e campanhas completas em minutos — reduza custos e multiplique seus resultados.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/p1OFMcYVgYKya0u/DIVULGADDORAA-4_54e85012e7c04741b96f9a55e2c47ce0.png",
     category: "Inteligência Artificial",
     price: "R$ 69,90",
@@ -201,7 +201,7 @@ export const courses: Course[] = [
   {
     id: "13",
     title: "Método Influência Milionária – Natália Trombelli",
-    description: "Construa autoridade e influência nas redes sociais para vender qualquer produto com facilidade. O método completo da Natália Trombelli para transformar seguidores em clientes fiéis e construir um império digital.",
+    description: "Construa autoridade e venda sem parecer que está vendendo. O método da Natália Trombelli para transformar seguidores em clientes fiéis e faturar fortunas.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/Y9zs8d8lxUKloS0/img_builder_37def586-0b09-4691-b14c-e2674ec60dd3_d182e8b1dd9e4b809f0e9a728cd5b2d4.png",
     category: "Marketing Digital",
     price: "R$ 197,00",
@@ -214,7 +214,7 @@ export const courses: Course[] = [
   {
     id: "14",
     title: "CLUBE CONECTA AFILIADAS – Rhanielle Viana",
-    description: "A comunidade mais completa para afiliadas que querem faturar de verdade. Estratégias avançadas de tráfego, copy e conversão para multiplicar suas comissões — com suporte de uma das maiores afiliadas do Brasil.",
+    description: "Fature fortunas como afiliada! Estratégias avançadas de tráfego, copy e conversão com suporte direto da Rhanielle Viana — uma das maiores afiliadas do Brasil.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/5jrARzwRPwSUaWK/img_builder_7cda14a3-a77d-4021-8b5e-6fb9a6a6cbc4_63759bd262a44ff58b4603cf0ba4fa19.png",
     category: "Marketing Digital",
     price: "R$ 129,90",
@@ -227,7 +227,7 @@ export const courses: Course[] = [
   {
     id: "15",
     title: "Método Pedro Primão ®",
-    description: "O método definitivo para construir uma renda online consistente e escalar seus resultados. Estratégias de tráfego pago, afiliação e criação de produtos digitais ensinadas passo a passo por um dos maiores nomes do marketing digital brasileiro.",
+    description: "O método #1 do Brasil para renda online. Tráfego, afiliação e criação de produtos ensinados pelo Pedro Primão — mais de 10.000 alunos já mudaram de vida.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/IgQLfXEY8bN3fU0/Identidade-Visual---Metodo-PP---Editavel-12_75616d74fcab48ae9fd712b237e75cfa.jpg",
     category: "Marketing Digital",
     price: "R$ 697,00/ano",
@@ -241,7 +241,7 @@ export const courses: Course[] = [
   {
     id: "16",
     title: "Treinamento Ar-Condicionado Automotivo 2.0",
-    description: "Aprenda a instalar, manter e consertar ar-condicionado automotivo — carros, caminhões e máquinas agrícolas. Um treinamento completo que te torna um profissional qualificado e disputado no mercado, do zero à excelência.",
+    description: "Torne-se um profissional de ar-condicionado automotivo e ganhe R$ 5.000+/mês. Carros, caminhões e máquinas agrícolas — do zero à excelência com certificado.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/azoGd96mjxFDFTM/img_builder_236f3efa-a9a7-4758-b954-441076fae410_8fc803c3784243d6a9a5369f76f701cb.png",
     category: "Técnico",
     price: "R$ 997,00",
@@ -254,7 +254,7 @@ export const courses: Course[] = [
   {
     id: "17",
     title: "Mega Pack +300.000 Diseños para Corte Láser",
-    description: "Mais de 300 mil designs profissionais prontos para corte a laser. Arquivos vetoriais de alta qualidade para gravadoras CO2 e fiber — perfeitos para criar produtos únicos e faturar com artesanato e personalização.",
+    description: "300.000+ designs profissionais prontos para corte a laser. Arquivos vetoriais de alta qualidade para gravadoras CO2 e fiber — crie produtos únicos e fature.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/hRq1A895pQzHPCh/img_builder_d8acd47d-0a8c-4d8a-9088-1bd9d51f1a41_0c850b1a26534053abd98436cd1856c6.png",
     category: "Design",
     price: "$8.90",
@@ -267,7 +267,7 @@ export const courses: Course[] = [
   {
     id: "18",
     title: "Carrosséis Magnéticos",
-    description: "Pack completo com mais de 2800 vídeos narrados com IA e humanizados para criar carrosséis magnéticos que convertem. Atualizações constantes e método lucrativo para afiliados e criadores de conteúdo.",
+    description: "2800+ vídeos narrados com IA para criar carrosséis que convertem. Atualizações constantes — o conteúdo mais completo para afiliados e criadores.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/1qFoSkSgKUkroBp/img_builder_2a5280f0-e142-4561-90b1-5ffb9f1840e2_4066b6b4da99453bac7c02021e2b329c.png",
     category: "Marketing Digital",
     price: "R$ 89,90/ano",
@@ -281,7 +281,7 @@ export const courses: Course[] = [
   {
     id: "19",
     title: "Método Além das Fronteiras",
-    description: "Descubra como gerar renda extra explorando oportunidades internacionais. Estratégias comprovadas para faturar em dólar/euro trabalhando de qualquer lugar do Brasil, mesmo começando do zero.",
+    description: "Fature em dólar/euro trabalhando do Brasil! Estratégias comprovadas para explorar oportunidades internacionais — mesmo começando do absoluto zero.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/oWHAg6y3MgvSsTy/img_builder_8e3ae727-58be-495a-bbca-153f9715423d_7bc608189a974b2282fd8ea1110c9e24.png",
     category: "Empreendedorismo",
     price: "R$ 157,00",
@@ -295,7 +295,7 @@ export const courses: Course[] = [
   {
     id: "20",
     title: "LiveGo Pro",
-    description: "Plataforma completa para criar lives profissionais com multi-camera, Overlays, transições e integração com todas as redes sociais. Ideal para quem quer se destacar com transmissões ao vivo de alta qualidade.",
+    description: "Lives profissionais com multi-câmera, overlays e transições. Integre com todas as redes e se destaque com transmissões ao vivo de nível TV.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/WGoTKUE9FQ8alpz/img_builder_75a90139-b861-4b3f-9798-8a368ef89f41_946879ba6a2d433d881fca123cd8c5c4.png",
     category: "Marketing Digital",
     price: "R$ 97,00/mês",
@@ -310,7 +310,7 @@ export const courses: Course[] = [
   {
     id: "21",
     title: "Roteiro Viral",
-    description: "Crie roteiros que viralizam nas redes sociais. Método comprovado para gerar milhões de visualizações com conteúdo estratégico que engaja e converte seguidores em clientes.",
+    description: "Crie roteiros que explodem de visualizações! Método comprovado para viralizar no Reels, TikTok e Shorts — e transformar audiência em dinheiro.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/Y9zs8d8lxUKloS0/IMG_0162_fbbbea3f4cd845ef9409ba0454d6391a.png",
     category: "Marketing Digital",
     price: "R$ 67,00",
@@ -324,7 +324,7 @@ export const courses: Course[] = [
   {
     id: "22",
     title: "Sinapse Psi",
-    description: "Plataforma completa para psicólogos que querem digitalizar sua prática. Agendamento online, prontuário eletrônico, teleatendimento e estratégias para atrair pacientes pelo Instagram.",
+    description: "Digitalize seu consultório! Agendamento online, prontuário eletrônico, teleatendimento e marketing para atrair pacientes pelo Instagram.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/dMaZrBKG0VqYouR/capa---sinapse---300x250_abeb7bebe0984e9b89230e82fa923eab.png",
     category: "Saúde",
     price: "R$ 159,00/mês",
@@ -339,7 +339,7 @@ export const courses: Course[] = [
   {
     id: "23",
     title: "Evolua Prospect - Premium",
-    description: "Assinatura premium para quem quer evoluir seus resultados com prospecção ativa. Ferramentas, estratégias e suporte para encontrar e converter leads de alta qualidade todos os meses.",
+    description: "Prospecção ativa que converte! Ferramentas, estratégias e suporte para encontrar leads de alta qualidade e fechar negócios todos os meses.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/Pxmg6dnKIte5q4o/2_1aaf4addc465465793ebd545369aea72.png",
     category: "Marketing Digital",
     price: "R$ 97,00/mês",
@@ -353,7 +353,7 @@ export const courses: Course[] = [
   {
     id: "24",
     title: "Escola da IA - Curso Completo",
-    description: "Domine a Inteligência Artificial do zero ao avançado. Aprenda a usar IA para criar conteúdo, automatizar tarefas, gerar renda e se tornar um profissional disputado no mercado.",
+    description: "IA do zero ao avançado! Crie conteúdo, automatize tarefas, gere renda e se torne um profissional disputado — tudo com aulas práticas e projetos reais.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/dlQwzBrfvXsR8D5/img_builder_cb0bc090-2614-408d-9c8d-90146dd2125f_5704948434f44c1b8015cb7d7ae0a930.png",
     category: "Inteligência Artificial",
     price: "R$ 167,00",
@@ -367,7 +367,7 @@ export const courses: Course[] = [
   {
     id: "25",
     title: "Enriquecendo com Vídeos Virais",
-    description: "Pack completo com estratégias para criar vídeos virais que geram milhares de visualizações e monetização. Aprenda a pegar tendências e transformar em conteúdo lucrativo.",
+    description: "Monetize com vídeos virais! Aprenda a pegar tendências e transformar em conteúdo que gera milhares de views e dinheiro na conta.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/REVqW4vZzhuctQO/Imagem-JPEG-4910-8228-7D-0_974ab612ae934bd29eddb898666f75af.jpeg",
     category: "Marketing Digital",
     price: "R$ 29,90",
@@ -380,7 +380,7 @@ export const courses: Course[] = [
   {
     id: "26",
     title: "Base Training - Drone",
-    description: "Treinamento completo para operar drones de forma profissional. Do básico ao avançado, incluindo manobras, filmagem aérea, legislação e como faturar com voos profissionais.",
+    description: "Torne-se um piloto de drone profissional! Manobras, filmagem aérea, legislação e como faturar com voos — do básico ao avançado.",
     image: "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=700/BoXpyywspe1LIdF/CAPAbase_083826ffe7b74513a78e9d82873b9051.png",
     category: "Técnico",
     price: "R$ 79,00/mês",

@@ -46,7 +46,7 @@ function StarRating({ rating }: { rating: number }) {
 export default function CourseCard({ course }: { course: Course }) {
   return (
     <div className="group relative bg-[#1B1F2A] rounded-2xl border border-[#2a2f3e] overflow-hidden shadow-lg hover:shadow-[0_8px_40px_rgba(255,193,7,0.2)] transition-all duration-300 hover:-translate-y-1">
-      <div className="relative aspect-[4/3] bg-[#0D0D0D] overflow-hidden">
+      <div className="relative aspect-[3/2] sm:aspect-[4/3] bg-[#0D0D0D] overflow-hidden">
         <Image
           src={course.image}
           alt={course.title}
