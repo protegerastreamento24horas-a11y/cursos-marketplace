@@ -1116,6 +1116,29 @@ export const courses: Course[] = [
     rating: 4.7,
     students: 2000,
   },
+  {
+    id: "58",
+    slug: "metodo-ia-lucro-com-videos",
+    title: "Metodo IA - Lucre com Videos Criados por IA",
+    description: "Aprenda a criar videos com inteligencia artificial e monetize seu conteudo. Metodos comprovados para gerar renda online com IA.",
+    longDescription: "Metodo completo para criar videos usando inteligencia artificial e lucrar com isso. Aprenda as melhores ferramentas de IA para produzir conteudo em escala e monetizar nas plataformas digitais.",
+    image: "https://aws-assets.kiwify.com.br/tqF2XQvPC3Hsqpu/Logo_Metodo_IA_9c09aa638ce84d7095d02d480a8c9dfe.png",
+    category: "Marketing Digital",
+    price: "R$ 24,90",
+    affiliateLink: "https://pay.kiwify.com.br/qcVmxiU?afid=ZP15P43M",
+    checkoutLink: "https://pay.kiwify.com.br/qcVmxiU?afid=ZP15P43M",
+    additionalLinks: [
+      { label: "Checkout R$ 49,90", url: "https://pay.kiwify.com.br/GCQDyzs?afid=ZP15P43M" },
+      { label: "Checkout R$ 29,90", url: "https://pay.kiwify.com.br/Xql3bFQ?afid=ZP15P43M" },
+      { label: "Checkout R$ 47,90", url: "https://pay.kiwify.com.br/SeS8Bcq?afid=ZP15P43M" },
+      { label: "Material para Divulgacao", url: "https://kiwify.app/Z2kriv6?afid=ZP15P43M" },
+      { label: "Grupo de Suporte para Afiliados", url: "https://kiwify.app/GKbNQEX?afid=ZP15P43M" },
+      { label: "Sales Page", url: "https://kiwify.app/Yc2tFlv?afid=ZP15P43M" },
+    ],
+    platform: "kiwify",
+    rating: 4.7,
+    students: 2000,
+  },
 ];
 
 export const getCourseBySlug = (slug: string): Course | undefined => {
