@@ -10,13 +10,19 @@ import SearchBar from "@/components/SearchBar";
 export default function HomePage() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("Todos");
+  const [sortBy, setSortBy] = useState("destaque");
 
   const featuredCourses = useMemo(() => {
     return courses.filter((c) => c.featured);
   }, []);
 
+  const parsePrice = (price: string): number => {
+    const match = price.replace(/[^\d,.]/g, '').replace(',', '.');
+    return parseFloat(match) || 0;
+  };
+
   const filteredCourses = useMemo(() => {
-    return courses.filter((course) => {
+    let result = courses.filter((course) => {
       const matchesSearch =
         search === "" ||
         course.title.toLowerCase().includes(search.toLowerCase()) ||
@@ -24,7 +30,28 @@ export default function HomePage() {
       const matchesCategory = category === "Todos" || course.category === category;
       return matchesSearch && matchesCategory;
     });
-  }, [search, category]);
+
+    switch (sortBy) {
+      case "menor-preco":
+        result = [...result].sort((a, b) => parsePrice(a.price) - parsePrice(b.price));
+        break;
+      case "maior-preco":
+        result = [...result].sort((a, b) => parsePrice(b.price) - parsePrice(a.price));
+        break;
+      case "melhor-avaliado":
+        result = [...result].sort((a, b) => (b.rating || 0) - (a.rating || 0));
+        break;
+      case "mais-alunos":
+        result = [...result].sort((a, b) => (b.students || 0) - (a.students || 0));
+        break;
+      case "destaque":
+      default:
+        result = [...result].sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+        break;
+    }
+
+    return result;
+  }, [search, category, sortBy]);
 
   const scrollCarousel = useCallback((id: string, direction: "left" | "right") => {
     const el = document.getElementById(`${id}-carousel`);
@@ -97,12 +124,30 @@ export default function HomePage() {
 
       {/* All Courses */}
       <section id="cursos" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
-          {category === "Todos" ? "Todos os Cursos" : category}
-        </h2>
-        <p className="text-[#D0D5E6] mb-8">
-          {filteredCourses.length} curso{filteredCourses.length !== 1 ? "s" : ""} encontrado{filteredCourses.length !== 1 ? "s" : ""}
-        </p>
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+          <div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
+              {category === "Todos" ? "Todos os Cursos" : category}
+            </h2>
+            <p className="text-[#D0D5E6]">
+              {filteredCourses.length} curso{filteredCourses.length !== 1 ? "s" : ""} encontrado{filteredCourses.length !== 1 ? "s" : ""}
+            </p>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-sm text-[#D0D5E6]/70">Ordenar:</span>
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+              className="rounded-xl border border-[#2a2f3e] bg-[#1B1F2A] px-4 py-2.5 text-sm text-white outline-none transition-colors focus:border-[#FFC107] cursor-pointer"
+            >
+              <option value="destaque">Destaques</option>
+              <option value="menor-preco">Menor Preço</option>
+              <option value="maior-preco">Maior Preço</option>
+              <option value="melhor-avaliado">Melhor Avaliado</option>
+              <option value="mais-alunos">Mais Alunos</option>
+            </select>
+          </div>
+        </div>
 
         {filteredCourses.length === 0 ? (
           <div className="text-center py-16">
