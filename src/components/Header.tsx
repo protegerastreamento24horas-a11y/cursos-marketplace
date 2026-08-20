@@ -5,12 +5,6 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
-const navLinks = [
-  { href: "/", label: "Inicio" },
-  { href: "/cursos", label: "Cursos" },
-  { href: "/cursos#ofertas", label: "Ofertas" },
-];
-
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -55,18 +49,6 @@ export default function Header() {
             />
           </Link>
 
-          <nav className="hidden md:flex items-center gap-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href + link.label}
-                href={link.href}
-                className="px-3 py-2 text-sm font-medium text-[#D0D5E6]/80 hover:text-[#FFC107] transition-colors rounded-lg hover:bg-[#FFC107]/5"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-
           <div className="flex items-center gap-2">
             <button
               onClick={() => setSearchOpen(!searchOpen)}
@@ -77,13 +59,6 @@ export default function Header() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
             </button>
-
-            <Link
-              href="/cursos"
-              className="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-sm font-bold text-[#0D0D0D] bg-gradient-to-r from-[#FFC107] to-[#FF7A00] rounded-xl hover:shadow-[0_0_20px_rgba(255,193,7,0.3)] transition-all hover:scale-[1.02] active:scale-95"
-            >
-              Ver Cursos
-            </Link>
 
             <button
               onClick={() => setMenuOpen(!menuOpen)}
@@ -120,24 +95,8 @@ export default function Header() {
         )}
 
         {menuOpen && (
-          <div className="md:hidden pb-4 border-t border-[#1B1F2A]/50 mt-2 pt-3 space-y-1 animate-fade-in">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href + link.label}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className="block py-3 px-4 text-sm font-medium text-[#D0D5E6]/80 hover:text-[#FFC107] hover:bg-[#FFC107]/5 rounded-xl transition-all"
-              >
-                {link.label}
-              </Link>
-            ))}
-            <Link
-              href="/cursos"
-              onClick={() => setMenuOpen(false)}
-              className="block py-3 px-4 text-sm font-bold text-[#0D0D0D] bg-gradient-to-r from-[#FFC107] to-[#FF7A00] rounded-xl text-center mt-2"
-            >
-              Ver Cursos
-            </Link>
+          <div className="md:hidden pb-4 border-t border-[#1B1F2A]/50 mt-2 pt-3 animate-fade-in">
+            <p className="text-xs text-[#D0D5E6]/30 px-4 pb-2">Busque cursos na barra acima</p>
           </div>
         )}
       </div>
