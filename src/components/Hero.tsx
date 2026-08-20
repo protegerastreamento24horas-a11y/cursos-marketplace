@@ -28,7 +28,7 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-[#0D0D0D]">
-      <div className="relative w-full" style={{ paddingTop: "50%" }}>
+      <div className="relative w-full" style={{ paddingTop: "46%" }}>
         {banners.map((banner, i) => (
           <Image
             key={banner.src}
