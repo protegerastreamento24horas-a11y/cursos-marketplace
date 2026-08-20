@@ -9,7 +9,7 @@ import FAQ from "@/components/FAQ";
 
 export default function HomePage() {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-[#0D0D0D] min-h-screen">
       <Hero />
       <BenefitsBar />
       <FeaturedCarousel />

@@ -67,7 +67,7 @@ export default async function CoursePage({ params }: Props) {
     .slice(0, 4);
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-[#0D0D0D] min-h-screen">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <nav className="mb-6 text-xs text-[#D0D5E6]/40">
           <Link href="/" className="hover:text-[#FFC107] transition-colors">Inicio</Link>

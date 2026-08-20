@@ -54,7 +54,7 @@ function CursosContent() {
   }, [search, category, sortBy]);
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-[#0D0D0D] min-h-screen">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="mb-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-white">
@@ -110,7 +110,7 @@ function CursosContent() {
 export default function CursosPage() {
   return (
     <Suspense fallback={
-      <div className="bg-white min-h-screen flex items-center justify-center">
+      <div className="bg-[#0D0D0D] min-h-screen flex items-center justify-center">
         <div className="text-sm text-[#D0D5E6]/50">Carregando...</div>
       </div>
     }>
